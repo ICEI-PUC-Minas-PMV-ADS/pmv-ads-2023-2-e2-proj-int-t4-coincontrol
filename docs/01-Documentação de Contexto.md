@@ -1,46 +1,40 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Em um cenário de constantes mudanças econômicas, o gerenciamento financeiro tem se consolidado como uma prática essencial para assegurar  estabilidade e segurança econômica ao longo da vida. As finanças pessoais não apenas moldam as vidas das pessoas, mas também têm um impacto significativo nos objetivos de curto, médio e longo prazo na vida. No entanto, a complexidade das transações, o crescimento das despesas e a necessidade de manter o equilíbrio financeiro podem muitas vezes tornar essa tarefa desafiadora e exigente.
+
+Em paralelo, as complexidades do mundo financeiro muitas vezes podem ser avassaladoras, com termos técnicos e conceitos de investimento que podem parecer impenetráveis para muitos. 
+
+Por outro lado, conforme apresentado pelo Guia de finanças pessoais em parceria com o Sebrae (GONDIM, 2018), o controle financeiro pessoal é importante para que se tenha uma renda disponível para emergências, que se planeje o futuro e a aposentadoria e, ao mesmo tempo, que sejam feitos investimentos parciais visando algum objetivo pessoal (como uma viagem por exemplo). Para tal, é extremamente importante a gestão financeira pessoal.
+
+Nesse contexto, é fundamental que as pessoas disponham de uma opção simples, objetiva e prática que os permitam acompanhar e gerenciar adequadamente suas finanças.
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O problema evidenciado reside na desafiadora tarefa que diversas pessoas encontram ao lidar com o controle de suas finanças, o que as levam a situações de atrasos em pagamentos essenciais, acúmulo de dívidas significativas, e a postergação ou até mesmo a renúncia de metas e sonhos.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo geral deste projeto é criar uma aplicação que permita aos usuários gerenciar seus gastos, de forma simples, objetiva e prática. 
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Como objetivos específicos temos:
+  - Permitir o lançamento de despesas fixas em diferentes formas de pagamento;
+  - Permitir o lançamento de despesas variáveis em diferentes formas de pagamento; 
+  - Possibilitar ao usuário que esse defina limite de gastos para categorias diversas;
+  - Possibilitar ao usuário que esse defina valores para alcançar metas.
+
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Infelizmente, é necessário analisarmos os fatos. A população do Brasil está endividada. Segundo pesquisa publicada no jornal Estadão (AMORIM, 2019), em janeiro de 2019 cerca de 60% da população brasileira possui algum tipo de dívida. Em publicação do Serasa (2023), no mês de julho, 71.41 milhões de brasileiros se encontravam em situação de inadimplência.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+A falta de dinheiro para pagar as contas atrapalha a produtividade e ainda pode tornar as pessoas mais impacientes e irritadas, chegando, inclusive, a interferir nas relações familiares e de trabalho (LIMA, 2017). Compreender esses fatos é fundamental, pois reflete a urgência de abordar e solucionar a problemática do endividamento e da inadimplência que afeta significativamente a qualidade de vida de muitos brasileiros. 
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Diante desse cenário, a criação de uma aplicação de gerenciamento financeiro assume uma importância em empoderar usuários de forma que esses possam controlar suas finanças e reduzirem dívidas e, ainda, possibilitam a melhora de sua saúde financeira para que possam atingir seus objetivos.
+
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Este projeto é voltado para todas as pessoas que buscam maior controle e eficácia na gestão de suas finanças pessoais.  Esses usuários podem ser jovens que desejam construir uma base sólida para suas jornadas financeiras, adultos de todas as idades que buscam, por exemplo, sair de situação de dívidas e até mesmo aposentados que procuram manter a estabilidade de suas vidas através de uma vida financeira saudável.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
