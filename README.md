@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# COINCONTROL
 
 `CURSO`: Análise e Desenvolvimento de Sistemas
 
