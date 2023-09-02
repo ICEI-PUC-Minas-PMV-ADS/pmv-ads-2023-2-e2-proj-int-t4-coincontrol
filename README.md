@@ -1,23 +1,25 @@
 # TÍTULO DO PROJETO
 
-`CURSO`
+`CURSO`: Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+`DISCIPLINA`: Projeto do Eixo 2
 
-`SEMESTRE`
+`SEMESTRE`: 2023-2
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Desenvolvimento de aplicação que permita aos seus usuários gerenciarem suas finanças pessoais.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Ana Maria Pessoa;
+* Christiane Curi Pereira;
+* Gabriel Santana Lourenço;
+* Jonathan Francisco Rocha De Castro;
+* Matheus Henrique Maia Sousa;
+* Tiago Carvalho Taveira Araujo.
 
 ## Orientador
 
-* Nome completo do professor 1
+* Carlos Alberto Marques Pietrobon
 
 ## Instruções de utilização
 
