@@ -1,26 +1,14 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Este projeto foi elaborado pela equipe após a detecção da necessidade de alguns possíveis usuários. O grupo realizou pesquisas e observação de pessoas, suas rotinas diárias e suas necessidades para sugestão de como melhor atendê-los. Com isso, foram estabelecidas as personas, as histórias e os requisitos do projeto, conforme detalhado a seguir. 
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Personas são personagens que representam os usuários típicos de um produto ou serviço. Eles geralmente são criados com base em dados coletados em pesquisas ou entrevistas com os potenciais usuários reais do produto ou serviço. As informações utilizadas incluem dados demográficos (idade, sexo, educação e renda) e psicográficos (traços de personalidade, valores, interesses e padrões de comportamento). 
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+O objetivo é entender as necessidades e preferências de cada tipo de usuário e assim, criar soluções personalizadas que atendam às suas demandas.  No contexto de streaming, as personas são uma ferramenta importante para identificar padrões de consumo e desenvolver estratégias de comunicação mais eficazes para atender as expectativas dos consumidores. Para este trabalho, foram criadas personas ficcionais, ou seja, criadas com base na experiência dos membros do grupo, sem que houvesse coleta de dados. 
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+
 
 ## Histórias de Usuários
 
@@ -46,58 +34,57 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|ID |Descrição do Requisito |Prioridade |
+|:---:|---|---|
+|RF_001| A aplicação web deve permitir ao usuário inserir detalhes de suas transações financeiras (descrição, data, categoria, valor e método de pagamento).| ALTA |
+|RF_002| A aplicação deve permitir ao usuário inserir seus gastos recorrentes que serão lançados automaticamente de forma mensal.  | ALTA |
+|RF_003| A aplicação web deve ser capaz de mostrar ao usuário um resumo do saldo atual de suas contas, bem como uma visão geral das despesas e receitas.| ALTA |
+|RF_004| O aplicativo web deve oferecer ao usuário um modo de configurar alertas e notificações para serem lembrados de datas de vencimento de contas, metas atingidas ou gastos excessivos.| ALTA |
+|RF_005| O aplicativo web deve ter capacidade de exportar dados financeiros em formatos de planilhas ou PDF's, para uso externo.| MÉDIA |
+|RF_006| O aplicativo deve disponibilizar suporte ao cliente para auxiliar os usuários em caso de problemas técnicos ou dúvidas sobre o uso do aplicativo.| MÉDIA |
+|RF_007| O aplicativo deve permitir que os usuários estabeleçam um orçamento mensal para diferentes categorias de despesas.| MÉDIA |
+|RF_008| A aplicação deve oferecer sistema de credenciais do usuário com login e senha.| ALTA |
+|RF_009| A aplicação deve oferecer a conversão do dólar e euro.| BAIXA |
+|RF_010| A aplicação deve oferecer recomendações semanais de educação financeira.| BAIXA |
+|RF_011| A aplicação deve oferecer, no primeiro acesso do usuário, um tutorial explicativo de seu uso.| BAIXA |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|ID |Descrição do Requisito |Prioridade |
+|:---:|---|---|
+|RNF_001| O site deverá ser responsivo permitindo a visualização em um dispositivo móvel.   | ALTA | 
+|RNF_002| A aplicação deve ser publicada em ambiente acessível na internet (Github). |  ALTA |
+|RNF_003| A aplicação deve ser fácil de usar e navegar, com interfaces claras e intuitivas. | ALTA | 
+|RNF_004|O site deve ser compatível com os principais navegadores do mercado - Firefox, Chrome e Edge | ALTA | 
+|RNF_005| A senha do usuário deverá ter, no mínimo, oito caracteres com símbolo, número e letra maiúscula. |  ALTA | 
+|RNF_006| A aplicação deverá ser hospedada no servidor Microsoft Azure. |  ALTA | 
+|RNF_007| O aplicativo deve ser elaborado com as tecnologias C#, sqlserver, Microsoft Azure |  ALTA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
+## Regras de Negócio
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+São as regras do negócio.
+
+|ID| Regras                                             |
+|---|---|
+|01|Quando as saídas mensais cadastradas pelo usuário se aproximarem ou excederem do limite por ele definido, a aplicação apresentará uma notificação de alerta na tela..
+|02| Não haverá limite de quantidade para o lançamento de despesas.       |
+|03| A aplicação não se responsabiliza pela origem e/ou veracidade das informações cadastradas pelo usuário. |
+|04| A aplicação permitirá o cadastro de até três metas por usuário. |
 
 ## Restrições
 
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|---|---|
+|01|O projeto deve ser entregue no final do semestre no dia 06 de dezembro de 2023.
+|02| O projeto deve ser elaborado apenas pelos membros do grupo       |
+|03| A aplicação deve ser fácil de manter e atualizar, com código limpo e documentado para que os desenvolvedores possam entender e modificar facilmente o sistema. |
+|04| Toda comunicação inerente à aplicação será realizada com o uso de metodologia ágil. |
 
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/5957a648-f36a-45d0-a5e5-1373e022c7ed)
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
