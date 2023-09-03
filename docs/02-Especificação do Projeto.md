@@ -50,19 +50,22 @@ A seguir são apresentadas as personas que estão envolvidas no desenvolvimento 
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+| EU COMO ... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE` | PARA ... `MOTIVO/VALOR` |
+|:---:|---|---|
+|Joana Silva | Registrar meus gastos diários.   | Aprender a controlar melhor minha mesada. |
+|Joana Silva | Visualizar quanto preciso poupar da minha mesada.             | Para conseguir juntar dinheiro para comprar alguma coisa legal no futuro. |
+|Célio Gomes | Registrar minhas entradas permitindo visualizar o valor total.       | Para que eu possas tomar boas decisões em relação a investimentos no meu negócio.|
+|Célio Gomes | Registrar meus gastos fixos como água, luz, internet, etc.                 | Para poder manter minhas dívidas fixas em dia sem ocasionar gastos maiores com juros.
+|Célio Gomes | Ser notificado quando o valor total de minhas saídas estiver perto de atingir o limite de gastos estabelecido. | Me ajudar a juntar um dinheiro para planos pessoais futuros.
+|Juarez Moreira | Registrar meus gastos mensais . | Para ajudar a identificar padrões de gastos, áreas onde gasta mais do que deveria e oportunidades de economia. |
+|Juarez Moreira | Estabelecer quantias mensais  para poupança. | Conseguir alcançar uma reserva para situações emergenciais. |
+|Juarez Moreira | Estabelecer quantias mensais  para investimentos. |Para viabilizar a tão sonhada viagem para a Itália e fornecer o capital necessário para o empreendimento que pretende iniciar com seu filho.|
+|Stefani Castro | Tentar dimensionar os gastos mensais. | Para proporcionar uma compreensão detalhada das suas despesas, o que é crucial para assegurar que seu orçamento seja viável e equilibrado a longo prazo. |
+|Stefani Castro  | Criar uma reserva. | Para cobrir emergências relacionadas à saúde, material didático e permitir desfrutar de momentos de lazer sem comprometer suas finanças e garantir recursos para viagens de retorno ou visitas ao Brasil.|
+|Luisa Mota  | Administrar minhas finanças. | Para garantir a segurança financeira dela e de seus filhos. |
+|Luisa Mota  | Criar uma reserva de emergência. | Conseguir evitar novas dívidas e estar em situação mais confortável em casos de problemas repentinos. |
+|Luisa Mota  | Criar uma reserva de longo prazo. | Conseguir custear no futuro gastos relacionados à faculdades e intercâmbios. |
+|Luisa Mota  | Gerir gastos mensais com cursos e aulas esportivas de seus filhos. | Manter uma gestão eficaz de seu orçamento global e prevenir desequilíbrios financeiros. Isso também assegura que seus filhos possam continuar desfrutando dessas atividades, garantindo um crescimento saudável e enriquecedor para eles. |
 
 ## Requisitos
 
