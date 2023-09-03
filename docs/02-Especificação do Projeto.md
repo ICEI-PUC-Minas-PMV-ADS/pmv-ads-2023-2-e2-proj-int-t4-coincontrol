@@ -10,35 +10,35 @@ A seguir são apresentadas as personas que estão envolvidas no desenvolvimento 
 |-----------------------------------------|---------------------------------|
 |**Idade** |15  anos
 |**Profissão** |Estudante 
-|**TBD** | Estuda no turno matutino e não trabalha. Recebe mesada dos pais e necessita de fazer controle do uso da mesada com lanches na escola e outros gastos variáveis.
+|**Histórico** | Estuda no turno matutino e não trabalha. Recebe mesada dos pais e necessita de fazer controle do uso da mesada com lanches na escola e outros gastos variáveis.
 |**Desafios** |-  Ainda não tem prática de controle financeiro. <br> -  Manter dinheiro disponível para seus lanches durante todo o mês. <br> - Conseguir fazer sobrar algum dinheiro para juntar, pois deseja um tênis novo.
 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/127675409/c1278a0d-86e8-41c5-b2dd-b88b0a3ec071" width="230"/>| Célio Gomes  | 
 |-----------------------------------------|---------------------------------|
 |**Idade** |45 anos
 |**Profissão** |Comerciante
-|**TBD** |É profissional autônomo, viúvo e pai de duas crianças. Seu trabalho é a única fonte de renda familiar.
+|**Histórico** |É profissional autônomo, viúvo e pai de duas crianças. Seu trabalho é a única fonte de renda familiar.
 |**Desafios** |- Devido ao fato de ser autônomo, controlar bem suas entradas e saídas financeiras em meses diferentes, com rendas diferentes <br>- Arcar com todos os custos fixos da casa e das crianças.<br>- Conseguir guardar um dinheiro para viajar com as crianças em todas as férias de janeiro.
 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/127675409/4dda2405-11f4-4356-875d-8e74b1400914" width="600"/>| Juarez Moreira  | 
 |-----------------------------------------|---------------------------------|
 |**Idade** |68  anos
 |**Profissão** |Aposentado
-|**TBD** |É um aposentado que trabalhou a maior parte da vida como engenheiro civil. A principal fonte de renda da família provém da sua aposentadoria. Enquanto isso, sua esposa, uma artista plástica, enfrenta desafios para pintar com a mesma frequência devido ao avanço do mal de Parkinson. Além disso, o filho, que passou por um divórcio e está desempregado, retornou ao lar.
+|**Histórico** |É um aposentado que trabalhou a maior parte da vida como engenheiro civil. A principal fonte de renda da família provém da sua aposentadoria. Enquanto isso, sua esposa, uma artista plástica, enfrenta desafios para pintar com a mesma frequência devido ao avanço do mal de Parkinson. Além disso, o filho, que passou por um divórcio e está desempregado, retornou ao lar.
 |**Desafios** |- Tanto Juarez quanto Dona Lurdes possuem condições médicas que demandam medicação regular e consultas médicas frequentes. O plano de saúde, apesar de seu custo elevado, é absolutamente essencial.<br>- Atualmente, ele está custeando a pensão do neto Pedro, dado que seu filho Carlos se encontra desempregado.<br>- Ele anseia proporcionar a Dona Lurdes a viagem dos sonhos à Itália, permitindo-lhes explorar as histórias de seus antepassados de perto.<br>-Ele tem o desejo de economizar dinheiro para iniciar um pequeno empreendimento em parceria com seu filho Carlos. 
 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/127675409/fd373fe2-6cc4-41f4-8d28-a847e30e99f4" width="756"/>| Stefani  Castro  | 
 |-----------------------------------------|---------------------------------|
 |**Idade** |23  anos
 |**Profissão** | Graduada em Física
-|**TBD** |Recém-formada em Física, transborda entusiasmo e ambição conforme se prepara para iniciar um novo capítulo em sua jornada acadêmica. Sua dedicação incansável a levou a conquistar a oportunidade de cursar um mestrado em Engenharia Quântica na renomada Universidade de Harvard, realizando um sonho de longa data. Essa conquista, porém, carrega uma dimensão adicional: será a primeira vez que Stefani vai morar sozinha e em outro país. E terá que gerenciar sua bolsa acadêmica.
+|**Histórico** |Recém-formada em Física, transborda entusiasmo e ambição conforme se prepara para iniciar um novo capítulo em sua jornada acadêmica. Sua dedicação incansável a levou a conquistar a oportunidade de cursar um mestrado em Engenharia Quântica na renomada Universidade de Harvard, realizando um sonho de longa data. Essa conquista, porém, carrega uma dimensão adicional: será a primeira vez que Stefani vai morar sozinha e em outro país. E terá que gerenciar sua bolsa acadêmica.
 |**Desafios** |- Estabelecer residência em um novo país, especialmente em uma cidade como Cambridge, onde a moeda é diferente, trará despesas mais elevadas em comparação ao seu local de residência anterior.<br>- Explorar a cidade desconhecida e desfrutar de momentos de lazer também apresentarão desafios financeiros, pois esses gastos podem se acumular rapidamente.<br>- O mestrado em Engenharia Quântica provavelmente exigirá materiais acadêmicos e livros específicos, que podem ser caros e impactar seu orçamento.<br>-Emergências de saúde, problemas com moradia ou outras situações inesperadas podem surgir, exigindo uma reserva financeira para lidar com imprevistos.<br>-Além das despesas imediatas, Stefani   também precisará pensar em seu planejamento financeiro a longo prazo,incluindo a poupança para a viagem de volta e para outros objetivos após o mestrado.
 
 |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/127675409/75a7c262-3060-4c49-9f89-60a4b0e2e391" width="1100"/>| Luisa  Mota  | 
 |-----------------------------------------|---------------------------------|
 |**Idade** |38  anos 
 |**Profissão** |Secretária Executiva
-|**TBD** |É uma mulher incrivelmente forte e determinada que enfrentou as adversidades da vida com uma coragem inabalável. Após passar por um divórcio extremamente desafiador, ela se viu assumindo o papel de mãe solteira de dois filhos pequenos, Enzo e Valentina, o que a motivou a se tornar ainda mais independente e resiliente. Sua dedicação e amor por seus filhos a impulsionam a superar obstáculos com uma determinação única. Além de suas responsabilidades profissionais, Luisa assumiu a responsabilidade financeira da casa, já que seu ex-marido não contribui com pensão alimentícia. Essa situação a inspirou a aprofundar seu conhecimento em gestão financeira
+|**Histórico** |É uma mulher incrivelmente forte e determinada que enfrentou as adversidades da vida com uma coragem inabalável. Após passar por um divórcio extremamente desafiador, ela se viu assumindo o papel de mãe solteira de dois filhos pequenos, Enzo e Valentina, o que a motivou a se tornar ainda mais independente e resiliente. Sua dedicação e amor por seus filhos a impulsionam a superar obstáculos com uma determinação única. Além de suas responsabilidades profissionais, Luisa assumiu a responsabilidade financeira da casa, já que seu ex-marido não contribui com pensão alimentícia. Essa situação a inspirou a aprofundar seu conhecimento em gestão financeira
 |**Desafios** |- Se tornar uma administradora astuta das finanças domésticas, arcando com todos os custos da casa sem se endividar.<br>- Assegurar que Enzo e Valentina desfrutem de uma vida repleta de possibilidades, que abrangem desde educação de excelência até participação em aulas esportivas de qualidade.<br>- Demonstrar criatividade durante as férias ao planejar atividades acessíveis e divertidas que se encaixam no orçamento.<br>- Estabelecer duas reservas de dinheiro.<br>- Duntar dinheiro para para uma viagem para Disney World.
 
 
