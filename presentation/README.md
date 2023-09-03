@@ -1,3 +1,3 @@
 # Apresentação da Solução
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+Com o nome de ConinControlMenor consta nessa pasta um vídeo elaborado pelo grupo apresentando o problema existente e a proposta de solução desenvolvida pela equipe.
