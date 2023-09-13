@@ -1,13 +1,13 @@
 # Plano de Testes de Software
 
-De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da aplicação, são previstos os testes apresentados no quadro a seguir.
+De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da aplicação CoinControl, está prevista a realização dos testes apresentados no quadro a seguir.
  
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-01 - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-|Critério de Êxito | - O cadastro foi realizado com sucesso. |
+|	Requisito Associado 	| RF_008 - A aplicação deve oferecer sistema de credenciais que permita ao usuário criar seu login e senha ou acessar os dados caso já tenha cadastro. |
+| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação ou acessar os dados se já for cadastrado. |
+| Passos 	|  |
+|Critério de Êxito | - O cadastro foi realizado com sucesso ou o acesso ao cadastro foi alcançado |
 |  	|  	|
 | Caso de Teste 	| CT-02 – Efetuar login	|
 |Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
