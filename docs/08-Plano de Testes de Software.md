@@ -31,7 +31,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RF_003	- A aplicação web deve ser capaz de mostrar ao usuário um resumo do saldo atual de suas contas, bem como uma visão geral das despesas e receitas. |
 | Objetivo do Teste 	| Verificar se o usuário consegue visualizar um resumo do seu saldo atual. |
 | Passos 	| `A FAZER` |
-|Critério de Êxito | Usuário consegue visualizar seu saldo, com despesas e receitas. |
+|Critério de Êxito | Usuário consegue visualizar seu saldo, com despesas e receitas.. |
 |  	|  	|
 | **Caso de Teste** 	| **CT-06 – Visualizar saldo atual detalhado**	|
 |Requisito Associado | RF_004	- O aplicativo web deve oferecer ao usuário um modo de configurar alertas e notificações para serem lembrados de datas de vencimento de contas, metas atingidas ou gastos excessivos. |
