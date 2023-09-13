@@ -6,14 +6,26 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |:---:	|:---:	|
 |	Requisito Associado 	| RF_008 - A aplicação deve oferecer sistema de credenciais do usuário com login e senha. |
 | Objetivo do Teste 	| Verificar se o usuário consegue criar seu cadastro na aplicação. |
-| Passos 	| #A FAZER |
+| Passos 	| ***##A FAZER##*** |
 |Critério de Êxito | O cadastro foi realizado com sucesso. |
 |  	|  	|
 | **Caso de Teste** 	| **CT-02 – Efetuar login**	|
 |Requisito Associado | RF_008	- A aplicação deve possuir opção de fazer login caso o usuário já tenha cadastro. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| ***A FAZER*** |
+| Passos 	| ***##A FAZER##*** |
 |Critério de Êxito | O login foi realizado com sucesso. |
+|  	|  	|
+| **Caso de Teste** 	| **CT-03 – Efetuar login**	|
+|Requisito Associado | RF_001	- A aplicação web deve permitir ao usuário inserir detalhes de suas transações financeiras (descrição, data, categoria, valor e método de pagamento). |
+| Objetivo do Teste 	| Verificar se o usuário consegue inserir uma transação financeira completa. |
+| Passos 	| ***##A FAZER##*** |
+|Critério de Êxito | Consegue-se realizar a inserção da transação com todos os detalhamentos. |
+|  	|  	|
+| **Caso de Teste** 	| **CT-04 – Efetuar login**	|
+|Requisito Associado | RF_002	- A aplicação deve permitir ao usuário inserir seus gastos recorrentes que serão lançados automaticamente de forma mensal. |
+| Objetivo do Teste 	| Verificar se o usuário consegue inserir gastos recorrentes. |
+| Passos 	| ***##A FAZER##*** |
+|Critério de Êxito | Usuário consegue inserir gastos recorrentes. |
 
 
 
