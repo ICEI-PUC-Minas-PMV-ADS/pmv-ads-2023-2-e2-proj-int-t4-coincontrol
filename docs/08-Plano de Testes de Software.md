@@ -4,16 +4,22 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
  
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF_008 - A aplicação deve oferecer sistema de credenciais que permita ao usuário criar seu login e senha ou acessar os dados caso já tenha cadastro. |
-| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação ou acessar os dados se já for cadastrado. |
-| Passos 	|  |
-|Critério de Êxito | - O cadastro foi realizado com sucesso ou o acesso ao cadastro foi alcançado |
+|	Requisito Associado 	| RF_008 - A aplicação deve oferecer sistema de credenciais do usuário com login e senha. |
+| Objetivo do Teste 	| Verificar se o usuário consegue criar seu cadastro na aplicação. |
+| Passos 	| ***A FAZER*** |
+|Critério de Êxito | O cadastro foi realizado com sucesso. |
 |  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
+| **Caso de Teste** 	| **CT-02 – Efetuar login**	|
+|Requisito Associado | RF_008	- A aplicação deve possuir opção de fazer login caso o usuário já tenha cadastro. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
+| Passos 	| ***A FAZER*** |
+|Critério de Êxito | O login foi realizado com sucesso. |
+
+
+
+
+
+
 
  
 > **Links Úteis**:
