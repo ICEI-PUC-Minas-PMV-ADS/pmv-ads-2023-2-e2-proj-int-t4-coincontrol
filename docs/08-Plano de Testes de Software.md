@@ -6,7 +6,8 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |:---:	|:---:	|
 |	Requisito Associado 	| RF_008 - A aplicação deve oferecer sistema de credenciais do usuário com login e senha. |
 | Objetivo do Teste 	| Verificar se o usuário consegue criar seu cadastro na aplicação. |
-| Passos 	| <span style="color:red">A FAZER |
+| Passos 	| <span style="color:red">A FAZER</span> |
+ |
 |Critério de Êxito | O cadastro foi realizado com sucesso. |
 |  	|  	|
 | **Caso de Teste** 	| **CT-02 – Efetuar login**	|
