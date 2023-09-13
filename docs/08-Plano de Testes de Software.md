@@ -45,7 +45,7 @@ Teste** 	| **CT-05 – Visualizar saldo atual detalhado**	|
 | Passos 	| ***##A FAZER##*** |
 |Critério de Êxito | A aplicação exporta dados em arquivos. |
 
-| **Caso de Teste** 	| **CT-08 – Visualizar saldo atual detalhado**	|
+| **Caso de Teste** 	| **CT-08 – Relatar problemas ou sugestões**	|
 |Requisito Associado | RF_006	- O aplicativo deve possuir campo para que o usuário relate problemas técnicos ou sugestões para melhorar a usabilidade do aplicativo. |
 | Objetivo do Teste 	| Checar se a aplicação possui campo que permita aos usuários o relato de problemas técnicos ou sugestões para melhorar a usabilidade do aplicativo. |
 | Passos 	| ***##A FAZER##*** |
