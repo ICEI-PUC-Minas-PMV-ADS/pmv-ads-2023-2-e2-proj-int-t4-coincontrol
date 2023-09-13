@@ -26,6 +26,12 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 | Objetivo do Teste 	| Verificar se o usuário consegue inserir gastos recorrentes. |
 | Passos 	| ***##A FAZER##*** |
 |Critério de Êxito | Usuário consegue inserir gastos recorrentes. |
+|  	|  	|
+| **Caso de Teste** 	| **CT-05 – Efetuar login**	|
+|Requisito Associado | RF_003	- A aplicação web deve ser capaz de mostrar ao usuário um resumo do saldo atual de suas contas, bem como uma visão geral das despesas e receitas. |
+| Objetivo do Teste 	| Verificar se o usuário consegue visualizar um resumo do seu saldo atual. |
+| Passos 	| ***##A FAZER##*** |
+|Critério de Êxito | Usuário consegue visualizar seu saldo, com despesas e receitas. |
 
 
 
