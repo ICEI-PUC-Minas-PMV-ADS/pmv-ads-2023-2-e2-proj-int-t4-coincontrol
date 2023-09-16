@@ -79,6 +79,12 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 | Passos 	| ***##A FAZER##*** |
 |Critério de Êxito | A aplicação apresenta as recomendações semanais. |
 
+| **Caso de Teste** 	| **CT-12 – Tutorial explicativo**	|
+|---|---|
+|Requisito Associado | RF_011	- A aplicação deve oferecer, no primeiro acesso do usuário, um tutorial explicativo de seu uso. |
+| Objetivo do Teste 	| Checar se a aplicação oferece, no primeiro acesso, um tutorial explicativo sobre seu uso. |
+| Passos 	| ***##A FAZER##*** |
+|Critério de Êxito | A aplicação oferece o tutorial explicativo no primeiro acesso do usuário. |
 
 
 
