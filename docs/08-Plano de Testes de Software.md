@@ -1,9 +1,9 @@
 # Plano de Testes de Software
 
-De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da aplicação CoinControl, está prevista a realização dos testes apresentados no quadro a seguir.
+De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da aplicação CoinControl, está prevista a realização dos testes, conforme os casos de teste apresentados a seguir.
  
+## CT-01 – Cadastrar perfil
 
-| **Caso de Teste** 	| **CT-01 – Cadastrar perfil** |
 |---|---|
 |	Requisito Associado 	| RF_008 - A aplicação deve oferecer sistema de credenciais do usuário com login e senha. |
 | Objetivo do Teste 	| Verificar se o usuário consegue criar seu cadastro na aplicação. |
