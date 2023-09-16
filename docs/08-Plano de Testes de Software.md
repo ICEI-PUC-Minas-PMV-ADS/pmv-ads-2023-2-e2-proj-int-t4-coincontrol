@@ -8,8 +8,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 | Objetivo do Teste 	| Verificar se o usuário consegue criar seu cadastro na aplicação. |
 | Passos 	| ***##A FAZER##*** |
 |Critério de Êxito | O cadastro foi realizado com sucesso. |
-|  	|   |
+|:---:|:---:|
 | **Caso de Teste** 	| **CT-02 – Efetuar login**	|
+|---|---|
 |Requisito Associado | RF_008	- A aplicação deve possuir opção de fazer login caso o usuário já tenha cadastro. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
 | Passos 	| ***##A FAZER##*** |
