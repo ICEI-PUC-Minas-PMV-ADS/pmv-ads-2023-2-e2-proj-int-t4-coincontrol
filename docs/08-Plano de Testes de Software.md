@@ -40,7 +40,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 | **Caso de Teste** 	| **CT-06 – Configurar alertas e notificações**	|
 |---|---|
 |Requisito Associado | RF_004	- O aplicativo web deve oferecer ao usuário um modo de configurar alertas e notificações para serem lembrados de datas de vencimento de contas, metas atingidas ou saldo negativo. |
-| Objetivo do Teste 	| Verificar se a aplicação emite alertas em datas de vencimento de contas, metas atingidas ou gastos excessivos. |
+| Objetivo do Teste 	| Verificar se a aplicação emite alertas em datas de vencimento de contas, metas atingidas ou saldo negativo. |
 | Passos 	| ***##A FAZER##*** |
 |Critério de Êxito | A aplicação emite os alertas cadastrados. |
 
@@ -53,10 +53,31 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 
 | **Caso de Teste** 	| **CT-08 – Relatar problemas ou sugestões**	|
 |---|---|
-|Requisito Associado | RF_006	- O aplicativo deve possuir campo para que o usuário relate problemas técnicos ou sugestões para melhorar a usabilidade do aplicativo. |
-| Objetivo do Teste 	| Checar se a aplicação possui campo que permita aos usuários o relato de problemas técnicos ou sugestões para melhorar a usabilidade do aplicativo. |
+|Requisito Associado | RF_006	- O aplicativo deve oferecer suporte ao cliente para auxiliar os usuários em caso de problemas técnicos ou dúvidas sobre o uso deste. |
+| Objetivo do Teste 	| Verificar se o sistema permite que o usuário obtenha suporte em caso de problemas técnicos ou dúvidas. |
 | Passos 	| ***##A FAZER##*** |
-|Critério de Êxito | A aplicação tem campo e permite o relato de problemas e/ou sugestões. |
+|Critério de Êxito | A aplicação fornece local de suporte em caso de problemas técnicos ou dúvidas. |
+
+| **Caso de Teste** 	| **CT-09 – Orçamento por categorias de despesas**	|
+|---|---|
+|Requisito Associado | RF_007	- O aplicativo deve permitir que os usuários estabeleçam um orçamento mensal para diferentes categorias de despesas. |
+| Objetivo do Teste 	| Checar se a aplicação permite ao usuário estabelecer um orçamento mensal para diferentes categorias de despesas. |
+| Passos 	| ***##A FAZER##*** |
+|Critério de Êxito | A aplicação permite o estabelecimento de orçamento mensal para categorias de despesas. |
+
+| **Caso de Teste** 	| **CT-10 – Conversão de moeda**	|
+|---|---|
+|Requisito Associado | RF_009	- A aplicação deve oferecer a conversão para dólar e euro. |
+| Objetivo do Teste 	| Verificar se a aplicação converte os valores do usuário para dólar e euro. |
+| Passos 	| ***##A FAZER##*** |
+|Critério de Êxito | A aplicação converte valores para dólar e euro. |
+
+| **Caso de Teste** 	| **CT-11 – Recomendações de educação financeira**	|
+|---|---|
+|Requisito Associado | RF_010	- A aplicação deve oferecer recomendações semanais de educação financeira. |
+| Objetivo do Teste 	| Verificar se a aplicação oferece recomendações semanais de educação financeira. |
+| Passos 	| ***##A FAZER##*** |
+|Critério de Êxito | A aplicação apresenta as recomendações semanais. |
 
 
 
