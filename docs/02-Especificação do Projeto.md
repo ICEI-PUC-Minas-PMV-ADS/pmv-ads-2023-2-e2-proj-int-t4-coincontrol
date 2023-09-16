@@ -83,7 +83,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF_006| O aplicativo deve disponibilizar suporte ao cliente para auxiliar os usuários em caso de problemas técnicos ou dúvidas sobre o uso do aplicativo.| MÉDIA |
 |RF_007| O aplicativo deve permitir que os usuários estabeleçam um orçamento mensal para diferentes categorias de despesas.| MÉDIA |
 |RF_008| A aplicação deve oferecer sistema de credenciais do usuário com login e senha.| ALTA |
-|RF_009| A aplicação deve oferecer a conversão do dólar e euro.| BAIXA |
+|RF_009| A aplicação deve oferecer a conversão para dólar e euro.| BAIXA |
 |RF_010| A aplicação deve oferecer recomendações semanais de educação financeira.| BAIXA |
 |RF_011| A aplicação deve oferecer, no primeiro acesso do usuário, um tutorial explicativo de seu uso.| BAIXA |
 
