@@ -3,7 +3,7 @@
 De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da aplicação CoinControl, está prevista a realização dos testes apresentados no quadro a seguir.
  
 | **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
-|:---:	|:---:	|
+|---|---|
 |	Requisito Associado 	| RF_008 - A aplicação deve oferecer sistema de credenciais do usuário com login e senha. |
 | Objetivo do Teste 	| Verificar se o usuário consegue criar seu cadastro na aplicação. |
 | Passos 	| ***##A FAZER##*** |
@@ -34,7 +34,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Critério de Êxito | Usuário consegue visualizar seu saldo, com despesas e receitas.. |
 |  	|   |
 | **Caso de Teste** 	| **CT-06 – Configurar alertas e notificações**	|
-|Requisito Associado | RF_004	- O aplicativo web deve oferecer ao usuário um modo de configurar alertas e notificações para serem lembrados de datas de vencimento de contas, metas atingidas ou gastos excessivos. |
+|Requisito Associado | RF_004	- O aplicativo web deve oferecer ao usuário um modo de configurar alertas e notificações para serem lembrados de datas de vencimento de contas, metas atingidas ou saldo negativo. |
 | Objetivo do Teste 	| Verificar se a aplicação emite alertas em datas de vencimento de contas, metas atingidas ou gastos excessivos. |
 | Passos 	| ***##A FAZER##*** |
 |Critério de Êxito | A aplicação emite os alertas cadastrados. |
