@@ -100,7 +100,8 @@ As ferramentas empregadas no projeto são:
 - Ferramentas de comunicação: Microsoft Teams e Whatsapp.
 - Ferramentas de desenho de tela (_wireframing_): Figma.
 - Plataforma de elaboração visual (_userflow_): Canva.
-- Plataforma de elaboração de apresentação: Microsoft PowerPoint.
+- Plataforma de elaboração de apresentação: Canva.
+- Ferramenta de criação de diagrama de classe: Astah.
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
