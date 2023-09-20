@@ -149,18 +149,3 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 | Passos 	| ***##A FAZER##*** |
 |Critério de Êxito | O site limita a quantidade de metas em até três por usuário. |
 
-| **Caso de Teste** 	| **CT-22 – Suporte ao site**	|
-|---|---|
-|Restrição associada | Restrição 03	- A aplicação deve ser fácil de manter e atualizar, com código limpo e documentado para que os desenvolvedores possam entender e modificar facilmente o sistema. |
-| Objetivo do Teste 	| Verificar a aplicação foi construída de forma a facilitar o suporte e a atualização. |
-| Passos 	| ***##A FAZER##*** |
-|Critério de Êxito | O site apresenta código limpo e documentado, facilitando o suporte a atualização. |
-
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
