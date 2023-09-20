@@ -105,7 +105,7 @@ São as regras do negócio.
 
 |ID| Regras                                             |
 |---|---|
-|01|Quando as saídas mensais cadastradas pelo usuário se aproximarem ou excederem do limite por ele definido, a aplicação apresentará uma notificação de alerta na tela..
+|01|Quando as saídas mensais cadastradas pelo usuário se aproximarem ou excederem do limite por ele definido, a aplicação apresentará uma notificação de alerta na tela.
 |02| Não haverá limite de quantidade para o lançamento de despesas.       |
 |03| A aplicação não se responsabiliza pela origem e/ou veracidade das informações cadastradas pelo usuário. |
 |04| A aplicação permitirá o cadastro de até três metas por usuário. |
