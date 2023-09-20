@@ -117,7 +117,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                         |
 |---|---|
 |01|O projeto deve ser entregue no final do semestre no dia 06 de dezembro de 2023.
-|02| O projeto deve ser elaborado apenas pelos membros do grupo       |
+|02| O projeto deve ser elaborado apenas pelos membros do grupo.       |
 |03| A aplicação deve ser fácil de manter e atualizar, com código limpo e documentado para que os desenvolvedores possam entender e modificar facilmente o sistema. |
 |04| Toda comunicação inerente à aplicação será realizada com o uso de metodologia ágil. |
 
