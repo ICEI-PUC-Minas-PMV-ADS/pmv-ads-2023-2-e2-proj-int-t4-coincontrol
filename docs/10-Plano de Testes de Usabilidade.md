@@ -1,20 +1,5 @@
 # Plano de Testes de Usabilidade
 
-````
-Os testes de usabilidade permitem avaliar a qualidade da interface com o usuário da aplicação interativa.
-
-Um plano de teste de usabilidade deverá conter: o detalhamento dos objetivos
-(em função dos requisitos levantados/implementados), dos critérios que serão utilizados para
-a seleção dos participantes, dos procedimentos a serem adotados pelos condutores de teste 
-(por exemplo: os testes serão presenciais ou remotos? o método será observação direta, medição ou avaliação?),
-das tarefas a serem executadas, dos dados a serem coletados (quantidade de cliques, número de erros, tempo etc.),
-a ordem de execução das tarefas e das etapas da sessão de teste, recursos demandados, métricas coletadas etc.
-
-Para cada voluntário do teste, é fundamental coletar e apresentar todos os dados/métricas previamente definidos, mas não se
-esqueça: atendendo à LGPD (Lei Geral de Proteção de Dados), nenhum dado sensível, que permita identificar o voluntário,
-deverá ser apresentado).
-````
-
 ## Objetivos
 O objetivo deste plano de teste de usabilidade é avaliar a usabilidade do sistema CoinControl, com base nos requisitos levantados e implementados. O teste visa garantir que a aplicação atenda às necessidades dos usuários com eficácia e proporcione uma experiência satisfatória.
 
@@ -48,8 +33,9 @@ Os testes de usabilidade serão conduzidos remotamente, usando ferramentas de vi
    - ***Tarefa 4:*** Registrar suas despesas financeiras.
    - ***Tarefa 5:*** Configurar um orçamento mensal para diferentes categorias de despesas.
    - ***Tarefa 6:*** Configurar alertas de vencimento de contas, metas atingidas ou gastos excessivos.
-   - ***Tarefa 7:*** Exportar dados financeiros em formato PDF.
-   - ***Tarefa 8:*** Importar dados financeiros em formato PDF.
+   - ***Tarefa 7:*** Converter valor de uma moeda(Ex.: Real para Dolar).
+   - ***Tarefa 8:*** Exportar dados financeiros em formato PDF.
+   - ***Tarefa 9:*** Importar dados financeiros em formato PDF.
 
 4. **Entrvista Pós-Teste(15 minutos):** Após a conclusão das tarefas, os participantes serão entrevistados remotamente para obter feedback adicional sobre sua experiência com a aplicação.
 5. **Coleta de Métricas(durante o teste):** Durante a execução das tarefas remotas, os seguintes dados serão coletados:
