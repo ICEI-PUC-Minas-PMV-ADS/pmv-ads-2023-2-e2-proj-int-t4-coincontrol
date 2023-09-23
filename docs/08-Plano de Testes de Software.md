@@ -7,14 +7,14 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |	Requisito Associado 	| RF_008 - A aplicação deve oferecer sistema de credenciais do usuário com login e senha. |
 | Objetivo do Teste 	| Verificar se o usuário consegue criar seu cadastro na aplicação. |
 | Passos 	| ***##A FAZER##*** |
-|Critério de Êxito | O cadastro foi realizado com sucesso. |
+|Critério de Êxito | O cadastro é realizado com sucesso. |
 
 | **Caso de Teste** | **CT-02 - Efetuar login** |
 |---|---|
 |Requisito Associado | RF_008	- A aplicação deve possuir opção de fazer login caso o usuário já tenha cadastro. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
 | Passos 	| ***##A FAZER##*** |
-|Critério de Êxito | O login foi realizado com sucesso. |
+|Critério de Êxito | O login é realizado com sucesso. |
 
 | **Caso de Teste** 	| **CT-03 – Inserir transações**	|
 |---|---|
@@ -35,14 +35,14 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RF_003	- A aplicação web deve ser capaz de mostrar ao usuário um resumo do saldo atual de suas contas, bem como uma visão geral das despesas e receitas. |
 | Objetivo do Teste 	| Verificar se o usuário consegue visualizar um resumo do seu saldo atual. |
 | Passos 	| ***##A FAZER##*** |
-|Critério de Êxito | Usuário consegue visualizar seu saldo, com despesas e receitas.. |
+|Critério de Êxito | Usuário consegue visualizar seu saldo, com despesas e receitas. |
 
 | **Caso de Teste** 	| **CT-06 – Configurar alertas e notificações**	|
 |---|---|
 |Requisito Associado | RF_004	- O aplicativo web deve oferecer ao usuário um modo de configurar alertas e notificações para ser lembrado de datas de vencimento de contas, metas atingidas ou saldo negativo. |
 | Objetivo do Teste 	| Verificar se a aplicação emite alertas em datas de vencimento de contas, metas atingidas ou saldo negativo. |
 | Passos 	| ***##A FAZER##*** |
-|Critério de Êxito | A aplicação emite os alertas cadastrados. |
+|Critério de Êxito | A aplicação emite os alertas e notificações cadastrados. |
 
 | **Caso de Teste** 	| **CT-07 – Exportar dados em arquivo**	|
 |---|---|
