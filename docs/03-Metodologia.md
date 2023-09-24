@@ -102,6 +102,7 @@ As ferramentas empregadas no projeto são:
 - Plataforma de elaboração visual (_userflow_): Canva.
 - Plataforma de elaboração de apresentação: Canva.
 - Ferramenta de criação de diagrama de classe: Astah.
+- - Ferramenta de criação do projeto relacional: Draw.io.
 
 O editor de código foi escolhido porque ele possui uma integração com o
 sistema de versão. As ferramentas de comunicação utilizadas possuem
