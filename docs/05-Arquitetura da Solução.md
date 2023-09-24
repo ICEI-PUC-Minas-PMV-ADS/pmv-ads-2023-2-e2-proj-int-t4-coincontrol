@@ -30,7 +30,8 @@ Lista de tecnologias do projeto.
 - Ferramentas de desenho de tela (_wireframing_): Figma.
 - Plataforma de elaboração visual (_userflow_): Canva.
 - Plataforma de elaboração de apresentação: Canva.
-- Ferramenta de criação de diagrama de classe: Astah.
+- Ferramenta de criação de diagrama de classe e banco de dados: Astah.
+- Ferramenta de criação do projeto relacional: Draw.io.
 
 ## Hospedagem
 
