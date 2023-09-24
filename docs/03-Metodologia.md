@@ -69,7 +69,7 @@ O projeto contará com cinco sprints que serão detalhados conforme abaixo:
 
 
 
-- Evidências: 
+- Evidências: O grupo estruturou e entregou no último dia 24/09/2023 todas as _tasks_ planejadas para o sprint.
 
 #### Sprint 3
 - Planejamento:  
@@ -96,7 +96,7 @@ O projeto contará com cinco sprints que serão detalhados conforme abaixo:
 
 As ferramentas empregadas no projeto são:
 
-- Editor de código: A definir.
+- Editor de código: Visual Studio.
 - Ferramentas de comunicação: Microsoft Teams e Whatsapp.
 - Ferramentas de desenho de tela (_wireframing_): Figma.
 - Plataforma de elaboração visual (_userflow_): Canva.
