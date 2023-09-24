@@ -23,9 +23,14 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Lista de tecnologias do projeto.
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+- Editor de código: Visual Studio.
+- Ferramentas de comunicação: Microsoft Teams e Whatsapp.
+- Ferramentas de desenho de tela (_wireframing_): Figma.
+- Plataforma de elaboração visual (_userflow_): Canva.
+- Plataforma de elaboração de apresentação: Canva.
+- Ferramenta de criação de diagrama de classe: Astah.
 
 ## Hospedagem
 
