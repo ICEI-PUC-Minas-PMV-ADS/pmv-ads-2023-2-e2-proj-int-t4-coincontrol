@@ -19,8 +19,7 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
 
-
-![Banco de dados](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/125419720/2cacf95a-4ed8-4dba-bde9-445a37e457f8)
+![Banco de dados](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/125419720/4a72357d-2ac3-4842-9355-0f82529684d4)
 
 
 ## Tecnologias Utilizadas
