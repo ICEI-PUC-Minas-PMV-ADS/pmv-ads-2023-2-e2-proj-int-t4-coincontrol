@@ -6,8 +6,8 @@ Aqui está a descrição da organização do software em relação aos elementos
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
+![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/125419720/4d6d4378-e6e4-42cf-a04d-23df4b987b22)
 
-![DiagramadeClasse](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/125419720/cc8ae3af-5e54-4d81-91c4-2791ca00642a)
 
 ## Modelo ER (Projeto Conceitual)
 
@@ -20,7 +20,8 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
 
-![Banco de dados](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/125419720/4a72357d-2ac3-4842-9355-0f82529684d4)
+
+![Banco de dados 4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/125419720/0ae031e8-2322-4b36-9045-d5d630de7b16)
 
 
 ## Tecnologias Utilizadas
