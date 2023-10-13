@@ -6,7 +6,7 @@ Aqui está a descrição da organização do software em relação aos elementos
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/125419720/4d6d4378-e6e4-42cf-a04d-23df4b987b22)
+![Diagrama](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/125419720/28e35550-3bb4-44e2-a7a7-5c85f35435b4)
 
 
 ## Modelo ER (Projeto Conceitual)
