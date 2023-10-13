@@ -10938,19 +10938,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\chris\\.nuget\\packages\\": {}
+    "C:\\Users\\Mathe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chris\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t4-coincontrol\\src\\coincontrol\\coincontrol.csproj",
+      "projectUniqueName": "C:\\Users\\Mathe\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t4-coincontrol\\src\\coincontrol\\coincontrol.csproj",
       "projectName": "coincontrol",
-      "projectPath": "C:\\Users\\chris\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t4-coincontrol\\src\\coincontrol\\coincontrol.csproj",
-      "packagesPath": "C:\\Users\\chris\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chris\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t4-coincontrol\\src\\coincontrol\\obj\\",
+      "projectPath": "C:\\Users\\Mathe\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t4-coincontrol\\src\\coincontrol\\coincontrol.csproj",
+      "packagesPath": "C:\\Users\\Mathe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mathe\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t4-coincontrol\\src\\coincontrol\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\chris\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11029,5 +11029,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\Mathe\\Source\\Repos\\pmv-ads-2023-2-e2-proj-int-t4-coincontrol\\src\\coincontrol\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
