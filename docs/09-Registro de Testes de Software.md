@@ -1,6 +1,16 @@
 # Registro de Testes de Software
 
-De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da aplicação CoinControl, está prevista a realização dos testes, conforme os casos de teste apresentados a seguir.
+De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da aplicação CoinControl, foram feitos testes de software, conforme os casos de teste e a escala apresentados a seguir.
+
+**ESCALA UTILIZADA NOS TESTES DE SOFTWARE:**
+
+| **NÍVEL DA ESCALA**| **CONCLUSÃO** | 
+|---|---|
+| Nível 0	| Está adequado com relação à usabilidade. |
+| Nível 1	| Problema estético que não tem necessidade que ser corrigido, a menos que haja tempo e recurso disponível. |
+| Nível 2	| Problema pequeno, com baixa prioridade na correção. |
+| Nível 3	| Problema grande, com alta prioridade de correção. |
+| Nível 4	| Catástrofe de usabilidade. O produto só será liberado se a correção for realizada. |
  
 | **Caso de Teste** | **CT-01 - Cadastrar perfil** |
 |---|---|
