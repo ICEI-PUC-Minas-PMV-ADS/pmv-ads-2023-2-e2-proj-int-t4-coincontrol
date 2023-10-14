@@ -12,6 +12,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 | Nível 3	| Problema grande, com alta prioridade de correção. |
 | Nível 4	| Catástrofe de usabilidade. O produto só será liberado se a correção for realizada. |
 
+
 **REGISTROS DE TESTES DE SOFTWARE:**
  
 | **Caso de Teste** | **CT-01 - Cadastrar perfil** |
