@@ -13,7 +13,7 @@ A coluna avaliação foi preenchida conforme escala a seguir:
 | Nível 3	| Problema grande, com alta prioridade de correção. |
 | Nível 4	| Catástrofe de usabilidade. O produto só será liberado se a correção for realizada. |
 
-**REGISTROS DE USABILIDADE:**
+**REGISTROS DE TESTES DE USABILIDADE:**
 
 
 | **1- VISIBILIDADE DO STATUS DO SISTEMA** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
