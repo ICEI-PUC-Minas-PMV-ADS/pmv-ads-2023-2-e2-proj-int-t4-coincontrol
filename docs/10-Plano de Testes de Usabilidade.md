@@ -52,3 +52,4 @@ As métricas coletadas durante os testes remotos incluirão:
 - Taxa de erros cometidos pelos participantes durante as tarefas remotas.
 - Reações dos participantes registradas remotamente durante as sessões de teste.
 - Avaliação da satisfação do usuário após a conclusão dos testes remotos.
+- Definião da qualidade de usabilidade tendo-se com referência as 10 heurísticas de Nielsen.
