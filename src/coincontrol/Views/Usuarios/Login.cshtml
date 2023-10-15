@@ -1,16 +1,16 @@
 ﻿@model coincontrol.Models.Usuario.Usuario
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Login";
 }
 
-<h1>Crie o seu usuário!</h1>
+<h1>Login</h1>
 
 <h4>Usuario</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Login">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
@@ -28,14 +28,13 @@
                 <span asp-validation-for="Senha" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Crie o seu perfil" class="btn btn-success" />
-                <a asp-action="Index" asp-controller="Home" class="btn btn-info">Voltar</a>
-
+                <input type="submit" value="Acessar" class="btn btn-success" />
+                <a asp-action="Create" class="btn btn-info">  Crie sua conta!</a>
             </div>
         </form>
+        <h3>@ViewBag.Message</h3>
     </div>
 </div>
-
 
 
 @section Scripts {

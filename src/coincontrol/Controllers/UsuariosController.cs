@@ -61,13 +61,13 @@ namespace coincontrol.Controllers
 
             if (usuario == null)
             {
-                ViewBag.Mensagem = "Usuário ou senha invalidos!";
+                ViewBag.Mensagem = "Usuário e/ou senha invalidos!";
                 return View();
             }
 
             if (!SenhaValida(dados.Senha, usuario.Senha))
             {
-                ViewBag.Mensagem = "Usuário ou senha invalidos!";
+                ViewBag.Mensagem = "Usuário e/ou senha invalidos!";
                 return View();
             }
 

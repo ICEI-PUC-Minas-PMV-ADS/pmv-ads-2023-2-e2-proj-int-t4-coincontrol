@@ -25,6 +25,22 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+                        <ul class="navbar-nav">
+
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <li class="nav-item">
+                                    Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
+                                </li>
+                            }
+
+                        </ul>
                     </ul>
                 </div>
             </div>
@@ -36,10 +52,16 @@
         </main>
     </div>
 
+
+
+
+
+
+
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - coincontrol - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
+            &copy; 2023 - Coincontrol - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
+        </div>s
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
