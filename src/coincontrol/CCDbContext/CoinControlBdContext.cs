@@ -8,5 +8,6 @@ namespace coincontrol.CCDbContext
         public CoinControlBdContext(DbContextOptions<CoinControlBdContext> options) : base(options) { }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Models.Carteira.Carteira> Carteiras { get; set; }
     }
 }

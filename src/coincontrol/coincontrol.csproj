@@ -10,10 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Models\Carteira\Carteira.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.22" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.22" />
@@ -24,6 +20,10 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.4" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\Carteira\" />
   </ItemGroup>
 
 </Project>
