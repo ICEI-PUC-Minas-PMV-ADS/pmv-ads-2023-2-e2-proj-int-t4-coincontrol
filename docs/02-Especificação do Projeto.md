@@ -75,7 +75,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID |Descrição do Requisito |Prioridade |
 |:---:|---|---|
-|RF_001| A aplicação web deve permitir ao usuário inserir detalhes de suas transações financeiras (descrição, data, categoria, valor e método de pagamento).| ALTA |
+|RF_001| A aplicação web deve permitir ao usuário inserir detalhes de suas transações financeiras (descrição, data, categoria e valor).| ALTA |
 |RF_002| A aplicação deve permitir ao usuário inserir seus gastos recorrentes que serão lançados automaticamente de forma mensal.  | ALTA |
 |RF_003| A aplicação web deve ser capaz de mostrar ao usuário um resumo do saldo atual de suas contas, bem como uma visão geral das despesas e receitas.| ALTA |
 |RF_004| O aplicativo web deve oferecer ao usuário um modo de configurar alertas e notificações para serem lembrados de datas de vencimento de contas, metas atingidas ou saldo negativo.| ALTA |
