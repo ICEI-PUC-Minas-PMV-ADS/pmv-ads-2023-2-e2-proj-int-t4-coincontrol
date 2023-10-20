@@ -20,9 +20,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |	Requisito Associado 	| RF_008 - A aplicação deve oferecer sistema de credenciais do usuário com login e senha. |
 | Objetivo do Teste 	| Verificar se o usuário consegue criar seu cadastro na aplicação. |
 |Resultado esperado | O cadastro é realizado com sucesso. |
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | Observa-se o botão de login na página principal, que direciona para a página de criação do usuário. É possível concluir o login e visualizá-lo no banco de dados. A estética do botão de "Login" na página principal pode ser melhorada. |
+|Avaliação | Nível 1 |
+|Evidência | <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/blob/69c4b364f54e5cf78fba155dc0ec2e1496b65aaf/docs/img/TesteBemvindo.png" width="278"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/blob/69c4b364f54e5cf78fba155dc0ec2e1496b65aaf/docs/img/TesteCriacaoPerfil.png" width="278"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/blob/69c4b364f54e5cf78fba155dc0ec2e1496b65aaf/docs/img/TesteMensObrigatCriarUsu.png" width="278"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/blob/69c4b364f54e5cf78fba155dc0ec2e1496b65aaf/docs/img/TesteUsuarioNoBD.png" width="278"/> |
 
 | **Caso de Teste** | **CT-02 - Efetuar login** |
 |---|---|
