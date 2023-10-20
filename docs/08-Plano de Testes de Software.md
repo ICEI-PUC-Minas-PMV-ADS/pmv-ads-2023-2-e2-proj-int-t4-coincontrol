@@ -20,7 +20,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |---|---|
 |Requisito Associado | RNF_005	- A senha do usuário deverá ter, no mínimo, oito caracteres com símbolo, número e letra maiúscula. |
 | Objetivo do Teste 	| Verificar se o site exige que a senha do usuário tenha, no mínimo, oito caracteres com símbolo, número e letra maiúscula. |
-| Passos 	| ********* |
+| Passos 	| Acessar o site da aplicação / Clicar em "Crie sua conta!" / Digitar o Nome, o Email e a Senha - que não atenda os requisitos propostos / Clicar em "Crie seu perfil" / Observar a mensagem de erro por não atendimento aos requisitos de formato de senha / Realizar nova tentativa atendendo ao formato proposto para a senha |
 |Critério de Êxito | O site exige que a senha do usuário tenha, no mínimo, oito caracteres com símbolo, número e letra maiúscula.|
 
 | **Caso de Teste** 	| **CT-04 – Inserir transações**	|
