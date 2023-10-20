@@ -72,11 +72,16 @@ O projeto contará com cinco sprints que serão detalhados conforme abaixo:
 - Evidências: O grupo estruturou e entregou no último dia 24/09/2023 todas as _tasks_ planejadas para o sprint.
 
 #### Sprint 3
-- Planejamento:  
+- Planejamento: Após entregar a documentação inerente ao segundo sprint, iniciou-se, propriamente dito, o desenvolvimento da aplicação. Conforme estabelecido pelo Professor Orientador, o grupo deveria entregar o template inicial da aplicação e, pelo menos, uma funcionalidade da aplicação com a comprovação de integração do _back end_ e _front end_. Dessa forma, o grupo planejou elaborar o banco de dados, o CRUD do usuário,a página de log-in, e, ainda, a estilização da página. A comprovação do POC (Prova de Conceito de Arquitera) se deu pela criação do usuário e autenticação dele no login. Planejamos ainda a realização dos testes de software e usabilidade para as funcionalidades desenvolvidas. Fizemos, por fim, atualizações no Diagrama de Classes, no Projeto Conceitual e no Projeto do Banco de Dados.  
 
-- Execução: 
+- Execução: Utilizando a ferramenta de projetos do Github, todos os _issues_ da etapa foram inseridos:
 
-- Evidências: 
+![Captura de tela 2023-10-20 203124](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/355300ea-6f42-49c6-aee1-bf0ac7b2fdf0)
+
+
+
+
+- Evidências: O grupo estruturou e entregou no último dia 22/10/2023 todas as _tasks_ planejadas para o sprint.
 
 #### Sprint 4
 - Planejamento: 
@@ -97,6 +102,7 @@ O projeto contará com cinco sprints que serão detalhados conforme abaixo:
 As ferramentas empregadas no projeto são:
 
 - Editor de código: Visual Studio.
+- Serviço de nuvem: Microsoft Azure.
 - Ferramentas de comunicação: Microsoft Teams e Whatsapp.
 - Ferramentas de desenho de tela (_wireframing_): Figma.
 - Plataforma de elaboração visual (_userflow_): Canva.
