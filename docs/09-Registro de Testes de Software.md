@@ -29,9 +29,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RF_008	- A aplicação deve possuir opção de fazer login caso o usuário já tenha cadastro. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
 |Resultado esperado | O login é realizado com sucesso. |
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | Observa-se que os dois botões que garantem o acesso a conta ou a criação de conta podem ter melhorias estéticas. Ainda, quando há o login, a confirmação de sucesso pode ter melhorias estéticas. |
+|Avaliação | Nível 1 |
+|Evidência |<img src= https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/10cefeb3-ecb9-49c5-879e-8d51d38d6e4f width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/6cfbee93-e498-4a40-b871-3a71213ec815" width="300"/> |
 
 | **Caso de Teste** 	| **CT-03 – Inserir transações**	|
 |---|---|
