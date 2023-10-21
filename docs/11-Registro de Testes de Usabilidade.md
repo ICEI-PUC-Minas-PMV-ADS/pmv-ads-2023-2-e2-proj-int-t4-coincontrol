@@ -18,66 +18,66 @@ A coluna avaliação foi preenchida conforme escala a seguir:
 
 | **1- VISIBILIDADE DO STATUS DO SISTEMA** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
-| As telas possuem títulos que descrevem seu conteúdo? |   |   |
-| Os ícones selecionados se destacam dos não selecionados? |   |   |
-| O sistema apresenta em que tela o usuário se encontra e possibilidades de ação? |   |   |
+| As telas possuem títulos que descrevem seu conteúdo? |  0 | Existem cabeçalhos com os nomes.  |
+| Os ícones selecionados se destacam dos não selecionados? | 1  |  Funcionalidade ainda não implementada. |
+| O sistema apresenta em que tela o usuário se encontra e possibilidades de ação? |  0 |  Há títulos que indicam em qual localidade da aplicação o usuário se encontra. |
 
 | **2- CORRESPONDÊNCIA ENTRE SISTEMA E MUNDO REAL** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
-| Os ícones são familiares e de fácil interpretação?  |   |   |
-| As cores correspondem aos códigos de cores comuns?  |   |   |
-| Os números possuem casas decimais separadas por vírgulas e uso de cifrão no caso de moeda? |   |   |
+| Os ícones são familiares e de fácil interpretação?  |  0 | Claros e objetivos.  |
+| As cores correspondem aos códigos de cores comuns?  | 0  |  Claros e objetivos. |
+| Os números possuem casas decimais separadas por vírgulas e uso de cifrão no caso de moeda? |  0 | As páginas criadas até o momento não apresentam números.  |
 
 | **3- CONTROLE DO USUÁRIO E LIBERDADE** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
-| As opções de ações do usuário são facilmente visualizadas? |   |   | 
-| Existem funcionalidades para o usuário desfazer ações? |   |   | 
-| O usuário pode editar, copiar e colar durante a entrada de dados? |   |   |
+| As opções de ações do usuário são facilmente visualizadas? |  0 |  Botões com bom tamanho de visualização. | 
+| Existem funcionalidades para o usuário desfazer ações? | 2  |  Pode-se buscar a inclusão de funcionalidade "voltar" nas páginas até então criadas. | 
+| O usuário pode editar, copiar e colar durante a entrada de dados? | 0  | Ele tem essa liberdade.  |
 
 | **4- CONSISTÊNCIA E PADRÕES** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
-| Os textos e ícones seguem padrões de formatação quanto ao alinhamento? |   |   | 
-| As cores de fundo, textos e botões são padronizadas nas diferentes telas? |   |   |  
-| Os objetos são nomeados de forma padronizada em todo o sistema? |   |   | 
-| Os campos obrigatórios são corretamente sinalizados?  |   |   |
+| Os textos e ícones seguem padrões de formatação quanto ao alinhamento? | 0  | Padronizado.  | 
+| As cores de fundo, textos e botões são padronizadas nas diferentes telas? | 0  |  Padronizado.  |  
+| Os objetos são nomeados de forma padronizada em todo o sistema? | 0  | Padronizado.   | 
+| Os campos obrigatórios são corretamente sinalizados?  | 0  | Caso o usuário não forneça algum dado obrigatório, há o fornecimento de mensagem de erro.  |
 
 | **5- PREVENÇÃO DE ERROS** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
-| O usuário é solicitado a confirmar tarefas que possuem consequências drásticas? |   |   | 
-| As opções dos menus são lógicas e distintas entre si?  |   |   |  
-| O sistema alerta o usuário quando ele vai realizar alguma ação crítica e/ou irreversível? |   |   |
-| Quando existem padrões de formatação para as entradas, isso é sinalizado ao usuário? |   |   |
+| O usuário é solicitado a confirmar tarefas que possuem consequências drásticas? | 2  | Será implementado.  | 
+| As opções dos menus são lógicas e distintas entre si?  | 0  |  Claras e objetivas. |  
+| O sistema alerta o usuário quando ele vai realizar alguma ação crítica e/ou irreversível? | 3  |  Será implementado. |
+| Quando existem padrões de formatação para as entradas, isso é sinalizado ao usuário? |  0 |  É informado em mensagem de erro. |
 
 | **6- RECONHECIMENTO EM VEZ DE MEMORIZAÇÃO** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
-| São observados rótulos dos ambientes onde o usuário se encontra? |   |   | 
-| Existem botões que levem às ações de visualização de histórico de movimentações? |   |   |  
-| A aplicação é nítida na diferenciação do estado logado do não logado?  |   |   | 
-| Existem diferenças, mesmo que sutis, entre as telas onde o usuário pode navegar, de forma a diferenciá-las e identificá-las visualmente?  |   |   |
+| São observados rótulos dos ambientes onde o usuário se encontra? |  0 |  Os nomes são claros. | 
+| Existem botões que levem às ações de visualização de histórico de movimentações? | 2  |  Funcionalidade que pode vir a ser implementada. |  
+| A aplicação é nítida na diferenciação do estado logado do não logado?  | 0  |  Quando logado, o nome do usuário é destacado. | 
+| Existem diferenças, mesmo que sutis, entre as telas onde o usuário pode navegar, de forma a diferenciá-las e identificá-las visualmente?  | 1  | Melhorias estéticas podem ser implementadas. |
 
 | **7- FLEXIBILIDADE E EFICIÊNCIA DE USO** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
-| Exitem atalhos para as ações do usuário? |   |   | 
-| O usuário pode realizar as tarefas de diferentes maneiras, incluindo algumas mais simples? |   |   |  
+| Exitem atalhos para as ações do usuário? | 0  | A aplicação possuí botões que já levam o usuário, com um clique, a função desejada.  | 
+| O usuário pode realizar as tarefas de diferentes maneiras, incluindo algumas mais simples? | 1  | Ainda não implementado. Baixa prioridade.  |  
 
 | **8- ESTÉTICA E DESIGN MINIMALISTA** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
-| Somente informações necessárias são visíveis, evitando confusão? |   |   | 
-| Os ícones e botões possuem contraste em relação ao fundo? |   |   |  
-| Os rótulos e menus são breves e descritivos das ações que representam?  |   |   | 
+| Somente informações necessárias são visíveis, evitando confusão? | 0  |  Feitas de forma clara e objetiva. | 
+| Os ícones e botões possuem contraste em relação ao fundo? | 0  | Cores que se destacam.  |  
+| Os rótulos e menus são breves e descritivos das ações que representam?  |  0 | Claras e objetivas.  | 
 
 | **9- AJUDA AOS USUÁRIOS PARA RECONHECIMENTO, DIAGNÓSTICO E RECUPERAÇÃO DE ERROS** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
-| As mensagens de erro são próximas do campo onde o erro ocorreu? |   |   | 
-| As mensagens de erro são acompanhadas de sinal sonoro? |   |   |  
-| As frases e questionamentos são diretos e sem ambiguidade? |   |   | 
-| As mensagens de erro identificam a causa do erro e auxiliam o usuário a consertá-lo? |   |   |
+| As mensagens de erro são próximas do campo onde o erro ocorreu? |  0 |  São no próprio campo. | 
+| As mensagens de erro são acompanhadas de sinal sonoro? |  1 |  Não entendemos como prioridade disponibilizar esse recurso sonoro. |  
+| As frases e questionamentos são diretos e sem ambiguidade? | 0  | São comandos direitos.  | 
+| As mensagens de erro identificam a causa do erro e auxiliam o usuário a consertá-lo? |  0 |   |
 
 | **10- AJUDA E DOCUMENTAÇÃO** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
-| A aplicação possui alguma forma de ajuda ao usuário? |   |   | 
-| Os campos de ajuda e documentação são facilmente encontrados pelo usuário? |   |   |  
-| A aplicação possui documentação/informação básica disponível para o usuário (funcionamento, utilidade, limitações, políticas de privacidade, entre outros)? |   |   | 
+| A aplicação possui alguma forma de ajuda ao usuário? |  4 |  Problema que será resolvido com prioridade. | 
+| Os campos de ajuda e documentação são facilmente encontrados pelo usuário? |  4 |  Problema que será resolvido com prioridade. |  
+| A aplicação possui documentação/informação básica disponível para o usuário (funcionamento, utilidade, limitações, políticas de privacidade, entre outros)? | 1  |   | 
 
 
 
