@@ -31,7 +31,7 @@ A coluna avaliação foi preenchida conforme escala a seguir:
 | **3- CONTROLE DO USUÁRIO E LIBERDADE** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
 | As opções de ações do usuário são facilmente visualizadas? |  0 |  Botões com bom tamanho de visualização. | 
-| Existem funcionalidades para o usuário desfazer ações? | 2  |  Pode-se buscar a inclusão de funcionalidade "voltar" nas páginas até então criadas. | 
+| Existem funcionalidades para o usuário desfazer ações? | 2  |  Pode-se buscar a inclusão de funcionalidade "voltar" nas páginas até então criadas. Também pode-se inserir o botão de editar o cadastro de login, caso ele queira alterar e-mail ou senha. | 
 | O usuário pode editar, copiar e colar durante a entrada de dados? | 0  | Ele tem essa liberdade.  |
 
 | **4- CONSISTÊNCIA E PADRÕES** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
@@ -46,7 +46,7 @@ A coluna avaliação foi preenchida conforme escala a seguir:
 | O usuário é solicitado a confirmar tarefas que possuem consequências drásticas? | 2  | Será implementado.  | 
 | As opções dos menus são lógicas e distintas entre si?  | 0  |  Claras e objetivas. |  
 | O sistema alerta o usuário quando ele vai realizar alguma ação crítica e/ou irreversível? | 3  |  Será implementado. |
-| Quando existem padrões de formatação para as entradas, isso é sinalizado ao usuário? |  0 |  É informado em mensagem de erro. |
+| Quando existem padrões de formatação para as entradas, isso é sinalizado ao usuário? |  2 |  É informado em mensagem de erro na maioria dos casos. Mas é necessário ainda cadastrar o requisito de formatação da senha, bem como seu aviso de erro em caso de não atendimento à regra. |
 
 | **6- RECONHECIMENTO EM VEZ DE MEMORIZAÇÃO** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
@@ -57,7 +57,7 @@ A coluna avaliação foi preenchida conforme escala a seguir:
 
 | **7- FLEXIBILIDADE E EFICIÊNCIA DE USO** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
-| Exitem atalhos para as ações do usuário? | 0  | A aplicação possuí botões que já levam o usuário, com um clique, a função desejada.  | 
+| Exitem atalhos para as ações do usuário? | 0  | A aplicação possui botões que já levam o usuário, com um clique, à função desejada.  | 
 | O usuário pode realizar as tarefas de diferentes maneiras, incluindo algumas mais simples? | 1  | Ainda não implementado. Baixa prioridade.  |  
 
 | **8- ESTÉTICA E DESIGN MINIMALISTA** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
@@ -71,13 +71,13 @@ A coluna avaliação foi preenchida conforme escala a seguir:
 | As mensagens de erro são próximas do campo onde o erro ocorreu? |  0 |  São no próprio campo. | 
 | As mensagens de erro são acompanhadas de sinal sonoro? |  1 |  Não entendemos como prioridade disponibilizar esse recurso sonoro. |  
 | As frases e questionamentos são diretos e sem ambiguidade? | 0  | São comandos direitos.  | 
-| As mensagens de erro identificam a causa do erro e auxiliam o usuário a consertá-lo? |  0 |   |
+| As mensagens de erro identificam a causa do erro e auxiliam o usuário a consertá-lo? |  0 |São claros e auto-explicativos.  |
 
 | **10- AJUDA E DOCUMENTAÇÃO** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
 | A aplicação possui alguma forma de ajuda ao usuário? |  4 |  Problema que será resolvido com prioridade. | 
 | Os campos de ajuda e documentação são facilmente encontrados pelo usuário? |  4 |  Problema que será resolvido com prioridade. |  
-| A aplicação possui documentação/informação básica disponível para o usuário (funcionamento, utilidade, limitações, políticas de privacidade, entre outros)? | 1  |   | 
+| A aplicação possui documentação/informação básica disponível para o usuário (funcionamento, utilidade, limitações, políticas de privacidade, entre outros)? | 1  | Pode ser implementado em etapas subsequentes.  | 
 
 
 
