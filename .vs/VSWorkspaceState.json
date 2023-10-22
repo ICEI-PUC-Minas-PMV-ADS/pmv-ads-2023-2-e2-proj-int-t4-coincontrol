@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\docs",
-    "\\docs\\img",
-    "\\src",
-    "\\src\\coincontrol",
-    "\\src\\coincontrol\\Views",
-    "\\src\\coincontrol\\Views\\Usuarios"
+    ""
   ],
-  "SelectedNode": "\\docs\\img",
+  "SelectedNode": "\\coincontrol.sln",
   "PreviewInSolutionExplorer": false
 }
