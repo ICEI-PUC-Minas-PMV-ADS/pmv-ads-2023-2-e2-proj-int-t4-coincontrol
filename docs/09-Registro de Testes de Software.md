@@ -20,7 +20,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |	Requisito Associado 	| RF_008 - A aplicação deve oferecer sistema de credenciais do usuário com login e senha. |
 | Objetivo do Teste 	| Verificar se o usuário consegue criar seu cadastro na aplicação. |
 |Resultado esperado | O cadastro é realizado com sucesso. |
-|Resultado obtido | Observa-se o botão de login na página principal, que direciona para a página de criação do usuário. É possível concluir o login e visualizá-lo no banco de dados. A estética do botão de "Login" na página principal pode ser melhorada. |
+|Resultado obtido | Observa-se o botão de login na página principal, que direciona para a página de criação do usuário. É possível concluir o login e visualizá-lo no banco de dados. A estética do botão de "Login" na página principal pode ser melhorada. Verifica-se que os usuários criados já podem ser vistos no banco de dados criado. |
 |Avaliação | Nível 1 |
 |Evidência |<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277198616-06ad58bb-9177-4c2c-afbe-8f6a51d48a06.png" width="300"/> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277198884-11bb85c4-e518-4c61-959b-da9caa02dea1.png" width="300"/> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277198942-33c3222d-7965-4e9f-a8a8-86071cdfbc5c.png" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/blob/69c4b364f54e5cf78fba155dc0ec2e1496b65aaf/docs/img/TesteUsuarioNoBD.png" width="300"/> |
 
