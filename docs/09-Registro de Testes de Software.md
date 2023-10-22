@@ -22,7 +22,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Resultado esperado | O cadastro é realizado com sucesso. |
 |Resultado obtido | Observa-se o botão de login na página principal, que direciona para a página de criação do usuário. É possível concluir o login e visualizá-lo no banco de dados. A estética do botão de "Login" na página principal pode ser melhorada. |
 |Avaliação | Nível 1 |
-|Evidência | <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/blob/69c4b364f54e5cf78fba155dc0ec2e1496b65aaf/docs/img/TesteBemvindo.png" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/blob/69c4b364f54e5cf78fba155dc0ec2e1496b65aaf/docs/img/TesteCriacaoPerfil.png" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/blob/69c4b364f54e5cf78fba155dc0ec2e1496b65aaf/docs/img/TesteMensObrigatCriarUsu.png" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/blob/69c4b364f54e5cf78fba155dc0ec2e1496b65aaf/docs/img/TesteUsuarioNoBD.png" width="300"/> |
+|Evidência |<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277198616-06ad58bb-9177-4c2c-afbe-8f6a51d48a06.png" width="300"/> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277198884-11bb85c4-e518-4c61-959b-da9caa02dea1.png" width="300"/> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277198942-33c3222d-7965-4e9f-a8a8-86071cdfbc5c.png" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/blob/69c4b364f54e5cf78fba155dc0ec2e1496b65aaf/docs/img/TesteUsuarioNoBD.png" width="300"/> |
 
 | **Caso de Teste** | **CT-02 - Efetuar login** |
 |---|---|
@@ -138,10 +138,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RNF_001	- O site deverá ser responsivo permitindo a visualização em um dispositivo móvel. |
 | Objetivo do Teste 	| Testar se o site está responsivo para acesso em computador e dispositivo móvel. |
 |Resultado esperado | A aplicação possui responsividade adequada para acesso em computador e dispositivo móvel.|
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
-
+|Resultado obtido |Observa-se que não a barra de rolagem horizontal para visualizar a tabela completa |
+|Avaliação | 3 |
+|Evidência | <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277199072-2ae0c075-7955-4a2b-a45a-d6311548fdaf.png" width="300"/> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277199390-88ec1956-2a92-4e4f-97c6-708ba06ccabd.png" width="300"/>
 | **Caso de Teste** 	| **CT-15 – Publicação do site**	|
 |---|---|
 |Requisito Associado | RNF_002	- A aplicação deve ser publicada em ambiente acessível na internet (Github). |
