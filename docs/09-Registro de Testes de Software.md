@@ -29,9 +29,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RF_008	- A aplicação deve possuir opção de fazer login caso o usuário já tenha cadastro. |
 | Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
 |Resultado esperado | O login é realizado com sucesso. |
-|Resultado obtido | Observa-se que os dois botões que garantem o acesso a conta ou a criação de conta podem ter melhorias estéticas. Ainda, quando há o login, a confirmação de sucesso pode ter melhorias estéticas. |
-|Avaliação | Nível 1 |
-|Evidência |<img src= https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/10cefeb3-ecb9-49c5-879e-8d51d38d6e4f width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/6cfbee93-e498-4a40-b871-3a71213ec815" width="300"/> |
+|Resultado obtido | Observa-se que melhoras estéticas deverão ser incrementadas após o login, a confirmação do usuário estar logado é cortada da barra de navegação. |
+|Avaliação | Nível 3 |
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/7fa0f0de-354d-4cc3-8c3c-ed72f286fda0" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/4204c3bf-1557-4f26-8e88-45f0acc839d4" width="300"/> |
 
 | **Caso de Teste** 	| **CT-03 – Critérios para a senha**	|
 |---|---|
