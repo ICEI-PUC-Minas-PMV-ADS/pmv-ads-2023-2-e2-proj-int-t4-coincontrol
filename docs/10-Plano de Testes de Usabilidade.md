@@ -3,7 +3,7 @@
 ## Objetivos
 O objetivo deste plano de teste de usabilidade é avaliar a usabilidade do sistema CoinControl, com base nos requisitos levantados e implementados. O teste visa garantir que a aplicação atenda às necessidades dos usuários com eficácia e proporcione uma experiência satisfatória.
 
-## Creitério de Seleção dos Participantes
+## Critério de Seleção dos Participantes
 Os participantes para o teste de usabilidade serão selecionados com base nos seguintes critérios:
 
 - Representatividade do público-alvo, incluindo jovens, adultos de todas as idades e aposentados.
