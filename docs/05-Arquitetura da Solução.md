@@ -13,7 +13,7 @@ O diagrama de classes ilustra graficamente como será a estrutura do software, e
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
-![Modelo Relacional coincontrol (1)_page-0001](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/f5da164f-3bc9-45e3-b1be-6f45d0c723e2)
+![Modelo Relacional coincontrol (1)_page-0001]((https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/75648729/9a8618c5-ee26-4a4a-9760-31c1217ef5ee)
 
 
 ## Projeto da Base de Dados
