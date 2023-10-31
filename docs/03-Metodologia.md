@@ -84,11 +84,12 @@ O projeto contará com cinco sprints que serão detalhados conforme abaixo:
 - Evidências: O grupo estruturou e entregou no último dia 22/10/2023 todas as _tasks_ planejadas para o sprint.
 
 #### Sprint 4
-- Planejamento: 
+- Planejamento: Após entregar a documentação inerente a terceira sprint, o grupo buscou finalizar a programação da aplicação. Dessa forma, o grupo planejou realizar a hospedagem da aplicação em servidor da nuvem, programar as demais funcionalidades da aplicação, validar o template padrão criado e, por óbvio, a realização dos testes de software e usabilidade para as funcionalidades desenvolvidas. 
+- Execução: Esse foi o planejmaento da sprint:
+  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/1fc08cb6-4581-4050-bb2c-b9f5c6d3826c)
 
-- Execução:
 
-- Evidências: 
+- Evidências: O grupo estruturou e entregou no último dia 19/11/2023 todas as _tasks_ planejadas para o sprint.
 
 #### Sprint 5
 - Planejamento:
