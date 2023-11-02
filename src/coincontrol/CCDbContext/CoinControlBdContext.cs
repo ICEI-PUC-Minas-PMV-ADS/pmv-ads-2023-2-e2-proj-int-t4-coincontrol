@@ -1,6 +1,7 @@
 ﻿using coincontrol.Models.Transaction;
 using coincontrol.Models.Usuario;
 using Microsoft.EntityFrameworkCore;
+using coincontrol.Models.Transacoes;
 
 namespace coincontrol.CCDbContext
 {
@@ -13,6 +14,8 @@ namespace coincontrol.CCDbContext
         public DbSet<Expense> Expenses { get; set; }
 
         public DbSet<coincontrol.Models.Transaction.Income> Income { get; set; }
+
+        public DbSet<coincontrol.Models.Transacoes.Transacao> Transacao { get; set; }
 
     }
 }

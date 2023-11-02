@@ -17,6 +17,9 @@ namespace coincontrol.Models.Transacoes
         [Column("idUsuario")]
         public int IdUsuario { get; set; }
 
+        [Column("modalidade")]
+        public Modalidade Modalidade { get; set; }
+
         [Column("valor")]
         [Required(ErrorMessage = "Obrigatório informar o valor!")]
         public float Valor { get; set; }
@@ -38,5 +41,13 @@ namespace coincontrol.Models.Transacoes
         [Column("moeda")]
         public char Moeda { get; set; }
     }
-}
 
+    public enum Modalidade
+    {
+        [Display(Name = "Entrada")]
+        ET,
+        [Display(Name = "Saída")]
+        SD
+    }
+
+}
