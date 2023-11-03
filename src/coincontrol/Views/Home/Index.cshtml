@@ -49,11 +49,13 @@
             </div>
         </li>
         <ul class="navbar-nav">
-
             @if (User.Identity.IsAuthenticated)
             {
                 <li class="nav-item">
-                    Olá, @User.Identity.Name <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                    <div style="display: flex; align-items: center;">
+                        Olá, @User.Identity.Name!
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Logout">Sair</a>
+                    </div>
                 </li>
             }
             else
@@ -62,8 +64,8 @@
                     <a class="nav-link text-dark" asp-area="" asp-controller="Usuarios" asp-action="Login">Login</a>
                 </li>
             }
-
         </ul>
+
         <!-- Nav Item - Alerts -->
         <li class="nav-item dropdown no-arrow mx-1">
             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
