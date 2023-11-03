@@ -33,6 +33,15 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Avaliação | Nível 3 |
 |Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/7fa0f0de-354d-4cc3-8c3c-ed72f286fda0" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/4204c3bf-1557-4f26-8e88-45f0acc839d4" width="300"/> |
 
+| **Caso de Teste V2** | **CT-02 - Efetuar login** |
+|---|---|
+|Requisito Associado | RF_008	- A aplicação deve possuir opção de fazer login caso o usuário já tenha cadastro. |
+| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
+|Resultado esperado | O login é realizado com sucesso. |
+|Resultado obtido | Com realização de edições no código, o problema retratado na primeira versão desse teste foi solucionado. |
+|Avaliação | Nível 0 |
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/908bc824-a271-45e6-aa6e-e9d282fa25cc" width="300"/> |
+
 | **Caso de Teste** 	| **CT-03 – Critérios para a senha**	|
 |---|---|
 |Requisito Associado | RNF_005	- A senha do usuário deverá ter, no mínimo, oito caracteres com símbolo, número e letra maiúscula. |
