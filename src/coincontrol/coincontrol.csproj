@@ -10,18 +10,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Models\Carteira\**" />
     <Compile Remove="Models\NovaPasta1\**" />
-    <Content Remove="Models\Carteira\**" />
     <Content Remove="Models\NovaPasta1\**" />
-    <EmbeddedResource Remove="Models\Carteira\**" />
     <EmbeddedResource Remove="Models\NovaPasta1\**" />
-    <None Remove="Models\Carteira\**" />
     <None Remove="Models\NovaPasta1\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Compile Remove="Controllers\CarteirasController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Carteira\Create.cshtml" />
+    <None Include="Views\Carteira\Delete.cshtml" />
+    <None Include="Views\Carteira\Details.cshtml" />
+    <None Include="Views\Carteira\Edit.cshtml" />
+    <None Include="Views\Carteira\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
