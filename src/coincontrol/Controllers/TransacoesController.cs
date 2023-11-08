@@ -34,7 +34,7 @@ namespace coincontrol.Controllers
             }
 
             var transacao = await _context.Transacao
-                .FirstOrDefaultAsync(m => m.IdTransacoes == id);
+                .FirstOrDefaultAsync(m => m.IdUsuario == id);
             if (transacao == null)
             {
                 return NotFound();
@@ -54,7 +54,7 @@ namespace coincontrol.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdTransacoes,IdCarteira,IdUsuario,Modalidade,Valor,Date,IdCategoria,SaldoInicial,SaldoFinal,Moeda")] Transacao transacao)
+        public async Task<IActionResult> Create([Bind("IdUsuario,IdTransacao,IdCarteira,IdUsuario,Modalidade,Valor,Data,IdCategoria,SaldoInicial,SaldoFinal,Moeda")] Transacao transacao)
         {
             if (ModelState.IsValid)
             {
@@ -86,9 +86,9 @@ namespace coincontrol.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdTransacoes,IdCarteira,IdUsuario,Modalidade,Valor,Date,IdCategoria,SaldoInicial,SaldoFinal,Moeda")] Transacao transacao)
+        public async Task<IActionResult> Edit(int id, [Bind("IdUsuario,IdTransacao,IdCarteira,IdUsuario,Modalidade,Valor,Data,IdCategoria,SaldoInicial,SaldoFinal,Moeda")] Transacao transacao)
         {
-            if (id != transacao.IdTransacoes)
+            if (id != transacao.IdUsuario)
             {
                 return NotFound();
             }
@@ -102,7 +102,7 @@ namespace coincontrol.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TransacaoExists(transacao.IdTransacoes))
+                    if (!TransacaoExists(transacao.IdUsuario))
                     {
                         return NotFound();
                     }
@@ -125,7 +125,7 @@ namespace coincontrol.Controllers
             }
 
             var transacao = await _context.Transacao
-                .FirstOrDefaultAsync(m => m.IdTransacoes == id);
+                .FirstOrDefaultAsync(m => m.IdUsuario == id);
             if (transacao == null)
             {
                 return NotFound();
@@ -155,7 +155,7 @@ namespace coincontrol.Controllers
 
         private bool TransacaoExists(int id)
         {
-          return _context.Transacao.Any(e => e.IdTransacoes == id);
+          return _context.Transacao.Any(e => e.IdUsuario == id);
         }
     }
 }

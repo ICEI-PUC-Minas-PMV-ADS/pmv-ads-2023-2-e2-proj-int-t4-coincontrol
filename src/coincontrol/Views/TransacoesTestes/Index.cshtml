@@ -1,0 +1,59 @@
+﻿@model IEnumerable<coincontrol.Models.TransacoesTestes.TransacaoTeste>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Lista de Transações Realizadas</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Inserir nova Transação</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCarteira)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCategoria)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Modalidade)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCarteira)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCategoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Modalidade)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdTransacao">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdTransacao">Detalhar</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdTransacao">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
