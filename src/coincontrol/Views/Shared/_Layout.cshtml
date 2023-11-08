@@ -25,12 +25,12 @@
 
     <!-- Page Wrapper -->
     <div id="wrapper">
-
+        @if(User.Identity.IsAuthenticated) {
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a asp-area="" asp-controller="Home" asp-action="Index"class="sidebar-brand d-flex align-items-center justify-content-center">
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="sidebar-brand d-flex align-items-center justify-content-center">
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
@@ -72,21 +72,21 @@
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-           
-
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-           
+
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
 
             <!-- Sidebar Message -->
-          
+
 
         </ul>
+        }
+        
         <!-- End of Sidebar -->
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">

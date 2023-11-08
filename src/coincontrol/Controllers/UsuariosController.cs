@@ -50,6 +50,10 @@ namespace coincontrol.Controllers
 
         public IActionResult Login()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
 
@@ -89,7 +93,7 @@ namespace coincontrol.Controllers
 
             await HttpContext.SignInAsync(principal, props);
 
-            return Redirect("/");
+            return RedirectToAction("Index", "Home");
         }
 
         public async Task<IActionResult> Logout()
