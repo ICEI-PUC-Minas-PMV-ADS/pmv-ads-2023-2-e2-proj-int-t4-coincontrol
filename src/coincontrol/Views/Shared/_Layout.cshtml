@@ -44,7 +44,7 @@
             <li class="nav-item active">
                 <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-link">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span>
+                    <span>Painel de Acompanhamento</span>
                 </a>
             </li>
 
@@ -61,12 +61,13 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Transactions</span>
+                    <span>Meus Controles</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <a asp-area="" asp-controller="Income" asp-action="Index" class="collapse-item">Income</a>
                         <a asp-area="" asp-controller="Expenses" asp-action="Index" class="collapse-item">Expenses</a>
+                        <a asp-area="" asp-controller="TransacoesTestes" asp-action="Index" class="collapse-item">Transações</a>
                     </div>
                 </div>
             </li>
@@ -100,7 +101,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; CoinControl 2023</span>
                     </div>
                 </div>
             </footer>
@@ -194,6 +195,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Income" asp-action="Index">Income</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="TransacoesTestes" asp-action="Index">Transações</a>
                         </li>
                         <ul class="navbar-nav">
                         
