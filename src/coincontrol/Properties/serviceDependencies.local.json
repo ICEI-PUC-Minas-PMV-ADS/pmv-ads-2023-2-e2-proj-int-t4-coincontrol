@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "mssql1": {
-      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/brazilsouth/connectors/ConnectionStringsDefaultConnection_D04A60E324",
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/eastus/connectors/ConnectionStringsDefaultConnection_D04A60E324",
       "secretStore": "LocalSecretsFile",
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/coincontrol-prod/databases/CoinControl",
       "type": "mssql.azure",
@@ -9,7 +9,7 @@
       "dynamicId": null
     },
     "mssql2": {
-      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/brazilsouth/connectors/ConnectionStringscoincontrolContext_76D074870A",
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/eastus/connectors/ConnectionStringscoincontrolContext_76D074870A",
       "secretStore": "LocalSecretsFile",
       "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/coincontrol-prod/databases/CoinControl",
       "type": "mssql.azure",

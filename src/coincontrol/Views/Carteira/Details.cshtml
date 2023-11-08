@@ -1,0 +1,16 @@
+﻿@model coincontrol.Models.Carteira.Carteiras
+
+<h1>Detalhes da Carteira</h1>
+<div class="form-group">
+    <label asp-for="SaldoInicial"></label>
+    <input asp-for="SaldoInicial" class="form-control" readonly />
+</div>
+<div class="form-group">
+    <label asp-for="Ano"></label>
+    <input asp-for="Ano" class="form-control" readonly />
+</div>
+<div class="form-group">
+    <label asp-for="Mes"></label>
+    <input asp-for="Mes" class="form-control" readonly />
+</div>
+<a asp-action="Index" class="btn btn-info">Voltar para a lista de carteiras</a>
