@@ -4,7 +4,7 @@
   "parameters": {
     "resourceGroupName": {
       "type": "string",
-      "defaultValue": "NewDatabase",
+      "defaultValue": "CoinControl",
       "metadata": {
         "_parameterType": "resourceGroup",
         "description": "Nome do grupo de recursos do recurso. É recomendável colocar os recursos no mesmo grupo de recursos para melhor acompanhamento."
@@ -12,7 +12,7 @@
     },
     "resourceGroupLocation": {
       "type": "string",
-      "defaultValue": "brazilsouth",
+      "defaultValue": "eastus",
       "metadata": {
         "_parameterType": "location",
         "description": "Local do grupo de recursos. Os grupos de recursos podem ter um local diferente do local dos recursos."
@@ -57,12 +57,11 @@
             },
             {
               "sku": {
-                "name": "GP_S_Gen5",
-                "tier": "GeneralPurpose",
-                "family": "Gen5",
-                "capacity": 1
+                "name": "Basic",
+                "tier": "Basic",
+                "capacity": 5
               },
-              "kind": "v12.0,user,vcore,serverless",
+              "kind": "v12.0,user",
               "location": "[parameters('resourceLocation')]",
               "name": "coincontrol-prod/CoinControl",
               "type": "Microsoft.Sql/servers/databases",
