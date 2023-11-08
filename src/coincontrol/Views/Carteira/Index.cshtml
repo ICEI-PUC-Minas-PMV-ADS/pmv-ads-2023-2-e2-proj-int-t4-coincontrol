@@ -1,0 +1,72 @@
+﻿@model IEnumerable<coincontrol.Models.Carteira.Carteiras>
+
+<h1>Lista de Carteiras</h1>
+<p>
+    <a asp-action="Create" class="btn btn-success">Adicionar Carteira</a>
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>ID do Usuário</th>
+            <th>Saldo Inicial</th>
+            <th>Saldo Parcial</th>
+            <th>Ano</th>
+            <th>Mês</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var carteira in Model)
+        {
+            <tr>
+                <td>@carteira.IdCarteira</td>
+                <td>@carteira.IdUsuario</td>
+                <td>@carteira.SaldoInicial</td>
+                <td>@carteira.SaldoParcial</td>
+                <td>@carteira.Ano</td>
+                <td>@carteira.Mes</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@carteira.IdCarteira" class="btn btn-primary">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@carteira.IdCarteira" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal-@carteira.IdCarteira">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Modal de confirmação de exclusão -->
+@foreach (var carteira in Model)
+{
+    <div class="modal fade" id="deleteModal-@carteira.IdCarteira" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Confirmação de Exclusão</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Tem certeza de que deseja excluir esta carteira?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <a asp-action="Delete" asp-route-id="@carteira.IdCarteira" class="btn btn-danger">Excluir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        $('#deleteModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var id = button.data('id');
+            var deleteUrl = button.data('delete-url');
+            var modal = $(this);
+            modal.find('#deleteButton').attr('href', deleteUrl);
+        });
+    </script>
+}
