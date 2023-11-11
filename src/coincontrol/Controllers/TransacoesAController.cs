@@ -54,11 +54,9 @@ namespace coincontrol.Controllers
         }
 
         // POST: TransacoesA/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdTransacao,IdUsuario,IdCarteira,Valor,Date,IdCategoria,Modalidade")] TransacoesA transacoesA)
+        public async Task<IActionResult> Create(TransacoesA transacoesA)
         {
             var emailUsuario = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == emailUsuario);
@@ -70,7 +68,7 @@ namespace coincontrol.Controllers
                 transacoesA.IdUsuario = usuario.IdUsuario;
                 _context.Add(transacoesA);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
             ViewData["IdCategoria"] = new SelectList(_context.Categorias, "IdCategoria", "Nome", transacoesA.IdCategoria);
             return View(transacoesA);
@@ -97,7 +95,7 @@ namespace coincontrol.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdTransacao,IdUsuario,IdCarteira,Valor,Date,IdCategoria,Modalidade")] TransacoesA transacoesA)
+        public async Task<IActionResult> Edit(int id, [Bind("IdUsuario,IdCarteira,Valor,Date,IdCategoria,Modalidade")] TransacoesA transacoesA)
         {
             if (id != transacoesA.IdTransacao)
             {
