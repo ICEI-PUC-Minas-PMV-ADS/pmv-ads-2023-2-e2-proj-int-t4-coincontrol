@@ -6,100 +6,94 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using coincontrol.CCDbContext;
-using coincontrol.Models.TransacoesA;
+using coincontrol.Models.categoria;
 using System.Security.Claims;
-using coincontrol.Models.Meta;
 
 namespace coincontrol.Controllers
 {
-    public class TransacoesAController : Controller
+    public class CategoriasController : Controller
     {
         private readonly CoinControlBdContext _context;
 
-        public TransacoesAController(CoinControlBdContext context)
+        public CategoriasController(CoinControlBdContext context)
         {
             _context = context;
         }
 
-        // GET: TransacoesA
+        // GET: Categorias
         public async Task<IActionResult> Index()
         {
-            var dados = await _context.TransacoesA.ToListAsync();
-            return View(dados);
+              return View(await _context.Categorias.ToListAsync());
         }
 
-        // GET: TransacoesA/Details/5
+        // GET: Categorias/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.TransacoesA == null)
+            if (id == null || _context.Categorias == null)
             {
                 return NotFound();
             }
 
-            var transacoesA = await _context.TransacoesA
-                .FirstOrDefaultAsync(m => m.IdTransacao == id);
-            if (transacoesA == null)
+            var categoria = await _context.Categorias
+                .FirstOrDefaultAsync(m => m.IdCategoria == id);
+            if (categoria == null)
             {
                 return NotFound();
             }
 
-            return View(transacoesA);
+            return View(categoria);
         }
 
-        // GET: TransacoesA/Create
+        // GET: Categorias/Create
         public IActionResult Create()
         {
-            ViewData["IdCategoria"] = new SelectList(_context.Categorias, "IdCategoria", "Nome");
             return View();
         }
 
-        // POST: TransacoesA/Create
+        // POST: Categorias/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdTransacao,IdUsuario,IdCarteira,Valor,Date,IdCategoria,Modalidade")] TransacoesA transacoesA)
+        public async Task<IActionResult> Create([Bind("Nome,Limite")] Categoria categoria)
         {
             var emailUsuario = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == emailUsuario);
-            var carteira = await _context.Carteiras.FirstOrDefaultAsync(c => c.IdUsuario == usuario.IdUsuario);
 
             if (ModelState.IsValid)
             {
-                transacoesA.IdCarteira = carteira.IdCarteira;
-                transacoesA.IdUsuario = usuario.IdUsuario;
-                _context.Add(transacoesA);
+                categoria.IdUsuario = usuario.IdUsuario;
+                _context.Add(categoria);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdCategoria"] = new SelectList(_context.Categorias, "IdCategoria", "Nome", transacoesA.IdCategoria);
-            return View(transacoesA);
+            return View(categoria);
         }
 
-        // GET: TransacoesA/Edit/5
+        // GET: Categorias/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.TransacoesA == null)
+            if (id == null || _context.Categorias == null)
             {
                 return NotFound();
             }
 
-            var transacoesA = await _context.TransacoesA.FindAsync(id);
-            if (transacoesA == null)
+            var categoria = await _context.Categorias.FindAsync(id);
+            if (categoria == null)
             {
                 return NotFound();
             }
-            return View(transacoesA);
+            return View(categoria);
         }
 
-        // POST: TransacoesA/Edit/5
+        // POST: Categorias/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdTransacao,IdUsuario,IdCarteira,Valor,Date,IdCategoria,Modalidade")] TransacoesA transacoesA)
+        public async Task<IActionResult> Edit(int id, [Bind("IdCategoria,Nome,Limite")] Categoria categoria)
         {
-            if (id != transacoesA.IdTransacao)
+            if (id != categoria.IdCategoria)
             {
                 return NotFound();
             }
@@ -108,12 +102,12 @@ namespace coincontrol.Controllers
             {
                 try
                 {
-                    _context.Update(transacoesA);
+                    _context.Update(categoria);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TransacoesAExists(transacoesA.IdTransacao))
+                    if (!CategoriaExists(categoria.IdCategoria))
                     {
                         return NotFound();
                     }
@@ -124,49 +118,49 @@ namespace coincontrol.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(transacoesA);
+            return View(categoria);
         }
 
-        // GET: TransacoesA/Delete/5
+        // GET: Categorias/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.TransacoesA == null)
+            if (id == null || _context.Categorias == null)
             {
                 return NotFound();
             }
 
-            var transacoesA = await _context.TransacoesA
-                .FirstOrDefaultAsync(m => m.IdTransacao == id);
-            if (transacoesA == null)
+            var categoria = await _context.Categorias
+                .FirstOrDefaultAsync(m => m.IdCategoria == id);
+            if (categoria == null)
             {
                 return NotFound();
             }
 
-            return View(transacoesA);
+            return View(categoria);
         }
 
-        // POST: TransacoesA/Delete/5
+        // POST: Categorias/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.TransacoesA == null)
+            if (_context.Categorias == null)
             {
-                return Problem("Entity set 'CoinControlBdContext.TransacoesA'  is null.");
+                return Problem("Entity set 'CoinControlBdContext.Categorias'  is null.");
             }
-            var transacoesA = await _context.TransacoesA.FindAsync(id);
-            if (transacoesA != null)
+            var categoria = await _context.Categorias.FindAsync(id);
+            if (categoria != null)
             {
-                _context.TransacoesA.Remove(transacoesA);
+                _context.Categorias.Remove(categoria);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool TransacoesAExists(int id)
+        private bool CategoriaExists(int id)
         {
-          return _context.TransacoesA.Any(e => e.IdTransacao == id);
+          return _context.Categorias.Any(e => e.IdCategoria == id);
         }
     }
 }

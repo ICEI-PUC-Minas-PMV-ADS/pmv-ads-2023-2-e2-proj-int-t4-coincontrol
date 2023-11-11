@@ -29,7 +29,7 @@ namespace coincontrol.Models.TransacoesA
 
             [Column("idCategoria")]
             [Required(ErrorMessage = "Obrigatório informar a categoria!")]
-            public IdCategoria IdCategoria { get; set; }
+            public int IdCategoria { get; set; }
                         
             [Column("modalidade")]            
             public Modalidade Modalidade { get; set; }
@@ -40,18 +40,6 @@ namespace coincontrol.Models.TransacoesA
         {
             Entrada,
             Saída
-        }
-
-        public enum IdCategoria
-        {
-            Alimentação,
-            Educação,
-            Lazer,
-            Saúde,    
-            Transportes,
-            Salário,
-            Ganhos,
-            Outros              
         }
 
 }

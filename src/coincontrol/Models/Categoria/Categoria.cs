@@ -6,7 +6,7 @@ using System.Data;
 namespace coincontrol.Models.categoria
 {
     [Table("categoria")]
-    public class categoria
+    public class Categoria
     {
         [Key]
         [Column("idCategoria")]
@@ -20,7 +20,10 @@ namespace coincontrol.Models.categoria
         [Column("limite")]
         [Required(ErrorMessage = "Obrigatório informar o limite de gastos!")]
         [MaxLength(10)]
-        public float Email { get; set; }
+        public float Limite { get; set; }
+
+        [Column("idUsuario")]
+        public int IdUsuario {  get; set; }
 
     }
 }
