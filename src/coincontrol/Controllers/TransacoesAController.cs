@@ -51,17 +51,15 @@ namespace coincontrol.Controllers
         }
 
         // POST: TransacoesA/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdTransacao,IdUsuario,IdCarteira,Valor,Date,IdCategoria,Modalidade")] TransacoesA transacoesA)
+        public async Task<IActionResult> Create(TransacoesA transacoesA)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(transacoesA);
+                _context.TransacoesA.Add(transacoesA);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index");
             }
             return View(transacoesA);
         }
@@ -87,7 +85,7 @@ namespace coincontrol.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdTransacao,IdUsuario,IdCarteira,Valor,Date,IdCategoria,Modalidade")] TransacoesA transacoesA)
+        public async Task<IActionResult> Edit(int id, [Bind("IdUsuario,IdCarteira,Valor,Date,IdCategoria,Modalidade")] TransacoesA transacoesA)
         {
             if (id != transacoesA.IdTransacao)
             {
