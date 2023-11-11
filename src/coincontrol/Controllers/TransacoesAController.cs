@@ -6,89 +6,90 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using coincontrol.CCDbContext;
-using coincontrol.Models.Transacoes;
+using coincontrol.Models.TransacoesA;
 
 namespace coincontrol.Controllers
 {
-    public class TransacoesController : Controller
+    public class TransacoesAController : Controller
     {
         private readonly CoinControlBdContext _context;
 
-        public TransacoesController(CoinControlBdContext context)
+        public TransacoesAController(CoinControlBdContext context)
         {
             _context = context;
         }
 
-        // GET: Transacoes
+        // GET: TransacoesA
         public async Task<IActionResult> Index()
         {
-            return View(model: await _context.Transacao.ToListAsync());
+            var dados = await _context.TransacoesA.ToListAsync();
+            return View(dados);
         }
 
-        // GET: Transacoes/Details/5
+        // GET: TransacoesA/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _context.Transacao == null)
+            if (id == null || _context.TransacoesA == null)
             {
                 return NotFound();
             }
 
-            var transacao = await _context.Transacao
-                .FirstOrDefaultAsync(m => m.IdUsuario == id);
-            if (transacao == null)
+            var transacoesA = await _context.TransacoesA
+                .FirstOrDefaultAsync(m => m.IdTransacao == id);
+            if (transacoesA == null)
             {
                 return NotFound();
             }
 
-            return View(transacao);
+            return View(transacoesA);
         }
 
-        // GET: Transacoes/Create
+        // GET: TransacoesA/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Transacoes/Create
+        // POST: TransacoesA/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdUsuario,IdTransacao,IdCarteira,IdUsuario,Modalidade,Valor,Data,IdCategoria,SaldoInicial,SaldoFinal,Moeda")] Transacao transacao)
+        public async Task<IActionResult> Create([Bind("IdTransacao,IdUsuario,IdCarteira,Valor,Date,IdCategoria,Modalidade")] TransacoesA transacoesA)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(transacao);
+                _context.Add(transacoesA);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(transacao);
+            return View(transacoesA);
         }
 
-        // GET: Transacoes/Edit/5
+        // GET: TransacoesA/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _context.Transacao == null)
+            if (id == null || _context.TransacoesA == null)
             {
                 return NotFound();
             }
 
-            var transacao = await _context.Transacao.FindAsync(id);
-            if (transacao == null)
+            var transacoesA = await _context.TransacoesA.FindAsync(id);
+            if (transacoesA == null)
             {
                 return NotFound();
             }
-            return View(transacao);
+            return View(transacoesA);
         }
 
-        // POST: Transacoes/Edit/5
+        // POST: TransacoesA/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdUsuario,IdTransacao,IdCarteira,IdUsuario,Modalidade,Valor,Data,IdCategoria,SaldoInicial,SaldoFinal,Moeda")] Transacao transacao)
+        public async Task<IActionResult> Edit(int id, [Bind("IdTransacao,IdUsuario,IdCarteira,Valor,Date,IdCategoria,Modalidade")] TransacoesA transacoesA)
         {
-            if (id != transacao.IdUsuario)
+            if (id != transacoesA.IdTransacao)
             {
                 return NotFound();
             }
@@ -97,12 +98,12 @@ namespace coincontrol.Controllers
             {
                 try
                 {
-                    _context.Update(transacao);
+                    _context.Update(transacoesA);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TransacaoExists(transacao.IdUsuario))
+                    if (!TransacoesAExists(transacoesA.IdTransacao))
                     {
                         return NotFound();
                     }
@@ -113,49 +114,49 @@ namespace coincontrol.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(transacao);
+            return View(transacoesA);
         }
 
-        // GET: Transacoes/Delete/5
+        // GET: TransacoesA/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Transacao == null)
+            if (id == null || _context.TransacoesA == null)
             {
                 return NotFound();
             }
 
-            var transacao = await _context.Transacao
-                .FirstOrDefaultAsync(m => m.IdUsuario == id);
-            if (transacao == null)
+            var transacoesA = await _context.TransacoesA
+                .FirstOrDefaultAsync(m => m.IdTransacao == id);
+            if (transacoesA == null)
             {
                 return NotFound();
             }
 
-            return View(transacao);
+            return View(transacoesA);
         }
 
-        // POST: Transacoes/Delete/5
+        // POST: TransacoesA/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            if (_context.Transacao == null)
+            if (_context.TransacoesA == null)
             {
-                return Problem("Entity set 'CoinControlBdContext.Transacao'  is null.");
+                return Problem("Entity set 'CoinControlBdContext.TransacoesA'  is null.");
             }
-            var transacao = await _context.Transacao.FindAsync(id);
-            if (transacao != null)
+            var transacoesA = await _context.TransacoesA.FindAsync(id);
+            if (transacoesA != null)
             {
-                _context.Transacao.Remove(transacao);
+                _context.TransacoesA.Remove(transacoesA);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool TransacaoExists(int id)
+        private bool TransacoesAExists(int id)
         {
-          return _context.Transacao.Any(e => e.IdUsuario == id);
+          return _context.TransacoesA.Any(e => e.IdTransacao == id);
         }
     }
 }

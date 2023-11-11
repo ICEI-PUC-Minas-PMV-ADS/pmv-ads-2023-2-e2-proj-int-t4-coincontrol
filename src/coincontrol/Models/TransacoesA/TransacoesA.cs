@@ -1,10 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
+using coincontrol.Models.Usuario;
 
-namespace coincontrol.Models.TransacoesTestes
+namespace coincontrol.Models.TransacoesA
 {    
-        [Table("transacoesTestes")]
-        public class TransacaoTeste
+        [Table("transacoesA")]
+        public class TransacoesA    
         {
                          
             [Key]
@@ -13,7 +15,7 @@ namespace coincontrol.Models.TransacoesTestes
 
             [Column("idUsuario")]
             public int IdUsuario { get; set; }
-
+            
             [Column("idCarteira")]
             public int IdCarteira { get; set; }
 

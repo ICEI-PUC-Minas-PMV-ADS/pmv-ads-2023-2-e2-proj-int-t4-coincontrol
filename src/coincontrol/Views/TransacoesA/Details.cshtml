@@ -1,4 +1,4 @@
-﻿@model coincontrol.Models.Transacoes.Transacao
+﻿@model coincontrol.Models.TransacoesA.TransacoesA
 
 @{
     ViewData["Title"] = "Details";
@@ -7,15 +7,9 @@
 <h1>Details</h1>
 
 <div>
-    <h4>Transacao</h4>
+    <h4>TransacoesA</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.IdCarteira)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.IdCarteira)
-        </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.IdUsuario)
         </dt>
@@ -23,10 +17,10 @@
             @Html.DisplayFor(model => model.IdUsuario)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Modalidade)
+            @Html.DisplayNameFor(model => model.IdCarteira)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Modalidade)
+            @Html.DisplayFor(model => model.IdCarteira)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Valor)
@@ -47,26 +41,14 @@
             @Html.DisplayFor(model => model.IdCategoria)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SaldoInicial)
+            @Html.DisplayNameFor(model => model.Modalidade)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SaldoInicial)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.SaldoFinal)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.SaldoFinal)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Moeda)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Moeda)
+            @Html.DisplayFor(model => model.Modalidade)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdTransacoes">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model?.IdTransacao">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

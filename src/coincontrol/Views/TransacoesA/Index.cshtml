@@ -1,17 +1,20 @@
-﻿@model IEnumerable<coincontrol.Models.TransacoesTestes.TransacaoTeste>
+﻿@model IEnumerable<coincontrol.Models.TransacoesA.TransacoesA>
 
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Lista de Transações Realizadas</h1>
+<h1>Transações</h1>
 
 <p>
-    <a asp-action="Create" class="btn btn-success">Inserir nova Transação</a>
+    <a asp-action="Create">Inserir nova transação</a>
 </p>
 <table class="table">
     <thead>
         <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdUsuario)
+            </th>
             <th>
                 @Html.DisplayNameFor(model => model.IdCarteira)
             </th>
@@ -34,6 +37,9 @@
 @foreach (var item in Model) {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.IdUsuario)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.IdCarteira)
             </td>
             <td>
@@ -49,9 +55,9 @@
                 @Html.DisplayFor(modelItem => item.Modalidade)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdTransacao">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.IdTransacao">Detalhar</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdTransacao">Deletar</a>
+                <a asp-action="Edit" asp-route-id="@item.IdTransacao">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdTransacao">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdTransacao">Delete</a>
             </td>
         </tr>
 }
