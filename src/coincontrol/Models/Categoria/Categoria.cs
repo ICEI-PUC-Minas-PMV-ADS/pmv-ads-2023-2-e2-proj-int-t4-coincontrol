@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 
-namespace coincontrol.Models.categoria
+namespace coincontrol.Models.Categoria
 {
     [Table("categorias")]
     public class Categoria

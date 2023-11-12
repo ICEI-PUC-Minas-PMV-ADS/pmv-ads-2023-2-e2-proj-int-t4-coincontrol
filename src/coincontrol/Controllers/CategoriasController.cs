@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using coincontrol.CCDbContext;
-using coincontrol.Models.categoria;
+using coincontrol.Models.Categoria;
 using System.Security.Claims;
 
 namespace coincontrol.Controllers

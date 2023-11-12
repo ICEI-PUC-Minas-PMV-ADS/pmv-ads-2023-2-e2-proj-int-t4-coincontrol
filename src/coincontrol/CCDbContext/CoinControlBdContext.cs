@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using coincontrol.Models.TransacoesA;
 using coincontrol.Models.Carteira;
 using coincontrol.Models.Meta;
-using coincontrol.Models.categoria;
+using coincontrol.Models.Categoria;
 
 namespace coincontrol.CCDbContext
 {
