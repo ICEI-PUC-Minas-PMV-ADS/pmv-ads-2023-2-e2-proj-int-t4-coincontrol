@@ -5,7 +5,7 @@ using System.Data;
 
 namespace coincontrol.Models.categoria
 {
-    [Table("categoria")]
+    [Table("categorias")]
     public class Categoria
     {
         [Key]
