@@ -4,9 +4,11 @@
     ViewData["Title"] = "Login";
 }
 
-<h1>Login</h1>
+<h1 style="font-size: 30px; font-weight: bold; color: #333;">Bem-vindo ao CoinControl!</h1>
+<h2 style="font-size: 25px; font-weight: bold; color: #555;">Vamos começar?</h2>
+<h3 style="font-size: 22px; font-weight: bold; color: #777;">Faça o seu login.</h3>
 
-<h4>Usuario</h4>
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -24,7 +26,7 @@
             </div>
             <div class="form-group">
                 <input type="submit" value="Acessar" class="btn btn-success" />
-                <a asp-action="Create" class="btn btn-info">  Crie sua conta!</a>
+                <a asp-action="Create" class="btn btn-info"> Novo por aqui? Crie sua conta!</a>
             </div>
         </form>
         <h3>@ViewBag.Message</h3>
