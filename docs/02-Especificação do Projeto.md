@@ -92,7 +92,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID |Descrição do Requisito |Prioridade |
 |:---:|---|---|
 |RNF_001| O site deverá ser responsivo permitindo a visualização em um dispositivo móvel.   | ALTA | 
-|RNF_002| A aplicação deve ser publicada em ambiente acessível na internet (Github). |  ALTA |
+|RNF_002| A aplicação deve ser publicada em ambiente acessível na internet (Azure). |  ALTA |
 |RNF_003| A aplicação deve ser fácil de usar e navegar, com interfaces claras e intuitivas. | ALTA | 
 |RNF_004|O site deve ser compatível com os principais navegadores do mercado - Firefox, Chrome e Edge | ALTA | 
 |RNF_005| A senha do usuário deverá ter, no mínimo, oito caracteres com símbolo, número e letra maiúscula. |  ALTA | 
