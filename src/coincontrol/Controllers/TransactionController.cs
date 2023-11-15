@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using coincontrol.CCDbContext;
 using coincontrol.Models;
+using Syncfusion.EJ2.Linq;
 
 namespace coincontrol.Controllers
 {
@@ -45,10 +46,35 @@ namespace coincontrol.Controllers
         {
             if (ModelState.IsValid)
             {
+                var categoria = await _context.Categories
+                .FirstOrDefaultAsync(c => c.CategoryId == transaction.CategoryId);
+
+                var meta = await _context.Metas
+                    .FirstOrDefaultAsync(m => m.Categoria == categoria);
+
                 if (transaction.TransactionId == 0)
+                {
+                    if (categoria.Modalidade.Equals("Entrada") && meta != null)
+                        meta.ValorParcial += decimal.Parse(transaction.Valor.ToString());
+
                     _context.Add(transaction);
+                }
                 else
+                {
+                   if(meta.ValorParcial > decimal.Parse(transaction.Valor.ToString()))
+                    {
+                        var diferenca = meta.ValorParcial - decimal.Parse(transaction.Valor.ToString());
+                        meta.ValorParcial -= diferenca;
+
+                    } else
+                    {
+                        var valorParcialAtualizado = decimal.Parse(transaction.Valor.ToString()) - meta.ValorParcial;
+                        meta.ValorParcial += valorParcialAtualizado;
+                    }
+                        
                     _context.Update(transaction);
+                }
+                  
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -68,6 +94,17 @@ namespace coincontrol.Controllers
             var transaction = await _context.Transactions.FindAsync(id);
             if (transaction != null)
             {
+                var categoria = await _context.Categories
+               .FirstOrDefaultAsync(c => c.CategoryId == transaction.CategoryId);
+
+                var meta = await _context.Metas
+                    .FirstOrDefaultAsync(m => m.Categoria == categoria);
+
+                meta.ValorParcial -= decimal.Parse(transaction.Valor.ToString());
+
+                if (meta.ValorParcial < decimal.Parse("0,00"))
+                    meta.ValorParcial = decimal.Parse("0,00");
+
                 _context.Transactions.Remove(transaction);
             }
             
