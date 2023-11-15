@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Runtime.Serialization;
 
 namespace coincontrol.Models.Meta
 {
@@ -12,17 +13,23 @@ namespace coincontrol.Models.Meta
 
         [Column("valorTotal")]
         [Required(ErrorMessage = "Obrigatório informar o valor da meta!")]
-        public float ValorTotal { get; set; }
+        [Display(Name = "Valor da Meta")]
+        public decimal ValorTotal { get; set; }
 
         [Column("valorParcial")]
-        public float ValorParcial { get; set; }
+        [Display(Name = "Valor Atual")]
+        public decimal ValorParcial { get; set; }
 
-        [Column("idUsuario")]
-        public int IdUsuario { get; set; }
-
-        [Column("idCategoria")]
+        [Display(Name = "Categoria")]
         [Required(ErrorMessage = "Obrigatório informar a categoria!")]
+        [NotMapped]
         public int IdCategoria { get; set; }
+
+        [ForeignKey("idCategoria")]
+        public Category Categoria { get; set; }
+
+        [ForeignKey("idUsuario")]
+        public Usuario.Usuario Usuario { get; set; }
 
     }
 }

@@ -23,7 +23,8 @@ namespace coincontrol.Controllers
         // GET: Metas
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Metas.ToListAsync());
+            var meta = _context.Metas.Include(m => m.Categoria);
+              return View(await meta.ToListAsync());
         }
 
         // GET: Metas/Details/5
@@ -47,7 +48,7 @@ namespace coincontrol.Controllers
         // GET: Metas/Create
         public IActionResult Create()
         {
-            ViewData["IdCategoria"] = new SelectList(_context.Categorias, "IdCategoria", "Nome");
+            ViewData["IdCategoria"] = new SelectList(_context.Categories, "CategoryId", "Título");
             return View();
         }
 
@@ -56,19 +57,25 @@ namespace coincontrol.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ValorTotal")] Meta meta)
+        public async Task<IActionResult> Create([Bind("ValorTotal,IdCategoria")] Meta meta)
         {
             var emailUsuario = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == emailUsuario);
 
             if (ModelState.IsValid)
             {
-                meta.IdUsuario = usuario.IdUsuario;
+                int idCategoria;
+                if (int.TryParse(HttpContext.Request.Form["IdCategoria"], out idCategoria))
+                {
+                    var categoria = await _context.Categories.FindAsync(idCategoria);
+                    meta.Categoria = categoria;
+                }
+
+                meta.Usuario = usuario;
                 _context.Add(meta);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["IdCategoria"] = new SelectList(_context.Categorias, "IdCategoria", "Nome", meta.IdCategoria);
             return View(meta);
         }
 
@@ -93,31 +100,17 @@ namespace coincontrol.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ValorTotal,IdCategoria")] Meta meta)
+        public async Task<IActionResult> Edit(int id, [Bind("ValorTotal")] Meta meta)
         {
             if (id != meta.IdMeta)
             {
-                return NotFound();
+                meta.IdMeta = id;
             }
 
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(meta);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!MetaExists(meta.IdMeta))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                _context.Update(meta);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             return View(meta);

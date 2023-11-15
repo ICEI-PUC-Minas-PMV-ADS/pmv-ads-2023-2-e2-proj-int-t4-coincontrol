@@ -4,9 +4,8 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit</h1>
+<h1>Deseja alterar o valor de sua Meta?</h1>
 
-<h4>Meta</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -15,33 +14,17 @@
             <input type="hidden" asp-for="IdMeta" />
             <div class="form-group">
                 <label asp-for="ValorTotal" class="control-label"></label>
-                <input asp-for="ValorTotal" class="form-control" />
+                <input value="@Model.ValorTotal" id="ValorTotal" name="ValorTotal" required data-val-required="O Valor total deve ser informado" class="form-control" />
                 <span asp-validation-for="ValorTotal" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ValorParcial" class="control-label"></label>
-                <input asp-for="ValorParcial" class="form-control" />
-                <span asp-validation-for="ValorParcial" class="text-danger"></span>
+                <input type="submit" value="Salvar alteração" class="btn btn-success" />
             </div>
-            <div class="form-group">
-                <label asp-for="IdUsuario" class="control-label"></label>
-                <input asp-for="IdUsuario" class="form-control" />
-                <span asp-validation-for="IdUsuario" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="IdCategoria" class="control-label"></label>
-                <input asp-for="IdCategoria" class="form-control" />
-                <span asp-validation-for="IdCategoria" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div>
+                <a class="btn btn-danger" asp-action="Index">Voltar</a>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {

@@ -4,10 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Metas</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-success" asp-action="Create">Criar nova meta</a>
 </p>
 <table class="table">
     <thead>
@@ -19,10 +19,7 @@
                 @Html.DisplayNameFor(model => model.ValorParcial)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdUsuario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdCategoria)
+                @Html.DisplayNameFor(model => model.Categoria)
             </th>
             <th></th>
         </tr>
@@ -37,15 +34,11 @@
                 @Html.DisplayFor(modelItem => item.ValorParcial)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdUsuario)
+                @Html.DisplayFor(modelItem => item.Categoria.Título)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdCategoria)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdMeta">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdMeta">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdMeta">Delete</a>
+                <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.IdMeta">Edit</a> |
+                <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.IdMeta">Delete</a>
             </td>
         </tr>
 }
