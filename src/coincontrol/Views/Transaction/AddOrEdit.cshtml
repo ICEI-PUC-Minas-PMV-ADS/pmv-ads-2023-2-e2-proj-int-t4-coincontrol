@@ -1,0 +1,57 @@
+﻿@model coincontrol.Models.Transaction
+
+@{
+    ViewData["PageTitle"] = Model.TransactionId == 0 ? "Criar nova Transação" : "Editar transação";
+}
+
+
+<div class="row">
+    <div class="col-md-7">
+        <div class="widget p-5" style="background-color:#212b36">
+
+        <form asp-action="AddOrEdit">
+				<div asp-validation-summary="ModelOnly" class="text-danger"></div><div class="mb-3">
+                    <input type="hidden" name="TransactionId" value="@Model.TransactionId" />
+
+                    <ejs-datepicker id="date" ejs-for="Data"
+                                    placeholder="Data" floatLabelType="Always"
+                                    format="dd-MMM-yy"></ejs-datepicker>
+                <span asp-validation-for="Data" class="text-danger"></span>
+				</div>
+            <div class="mb-3">
+                    <ejs-dropdownlist id="ddlCategory" ejs-for="CategoryId"
+                                      dataSource="@ViewBag.Categories" placeholder="Categoria"
+                                      floatLabelType="Always" allowFiltering="true" ignoreAccent="true"
+                                      filterType="Contains" popupHeight="220px">
+                        <e-dropdownlist-fields value="CategoryId" text="TituloComIcone"></e-dropdownlist-fields>
+                    </ejs-dropdownlist>
+                    <span asp-validation-for="CategoryId" class="text-danger"></span>
+                </div>
+            <div class="mb-3">
+                    <ejs-numerictextbox id="valor" ejs-for="Valor"
+                                        placeholder="Valor" floatLabelType="Always"
+                                        min=0 format="c" currency="BRL"></ejs-numerictextbox>
+                    <span asp-validation-for="Valor" class="text-danger fs-6"></span>
+            </div>
+            <div class="mb-3">
+                    <ejs-textbox id="descrição" placeholder="Descrição" ejs-for="Descrição"
+                                 floatLabelType="Always" multiline="true"></ejs-textbox>             
+            </div>
+            
+                            <ejs-button id="submit" type="submit" content="Adicionar" cssClass="e-success"></ejs-button>
+
+        </form>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="widget h-100 d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-money-bill-transfer fa-2xl"></i>
+        </div>
+    </div>
+</div>
+
+@* 
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+ *@
