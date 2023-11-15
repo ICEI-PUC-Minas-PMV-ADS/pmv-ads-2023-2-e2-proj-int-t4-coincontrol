@@ -26,5 +26,9 @@ namespace coincontrol.CCDbContext
 
         public DbSet<Categoria> Categorias { get; set; }
 
+        public DbSet<Transaction> Transactions { get; set; }
+        
+        public DbSet<Category> Categories { get; set; }
+
     }
 }
