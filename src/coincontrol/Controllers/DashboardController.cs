@@ -97,7 +97,7 @@ namespace coincontrol.Controllers
                                       from saida in saidaAgrupado.DefaultIfEmpty()
                                       select new
                                       {
-                                          day = dia,
+                                          dia = dia,
                                           entrada = entrada == null ? 0 : entrada.entrada,
                                           saida = saida == null ? 0 : saida.saida,
                                       };

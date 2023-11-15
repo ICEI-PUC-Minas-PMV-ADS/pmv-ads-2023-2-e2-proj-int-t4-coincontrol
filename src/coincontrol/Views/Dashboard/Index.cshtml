@@ -100,3 +100,24 @@
         </div>
     </div>
 </div>
+
+@*Transações Recentes*@
+<div class="row">
+    <div class="col-md-6">
+        <div class="widget">
+            <div class="p-4">
+                <h5 class="fw-bold">Transações Recentes</h5>
+            </div>
+            <div class="px-4 pb-4">
+                <ejs-grid id="recent-transactions"
+                          dataSource="@ViewBag.RecentTransactions" gridLines="None">
+                    <e-grid-columns>
+                        <e-grid-column headerText="Categoria" field="TituloCategoriaComIcone"></e-grid-column>
+                        <e-grid-column headerText="Data" field="Date" type="data" format="dd-MMM-yy"></e-grid-column>
+                        <e-grid-column headerText="Valor" field="FormattedAmount" textAlign="Right"></e-grid-column>
+                    </e-grid-columns>
+                </ejs-grid>
+            </div>
+        </div>
+    </div>
+</div>
