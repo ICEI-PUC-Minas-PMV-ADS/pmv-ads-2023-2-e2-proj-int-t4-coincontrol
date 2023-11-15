@@ -26,6 +26,8 @@
     <None Include="Views\Carteira\Details.cshtml" />
     <None Include="Views\Carteira\Edit.cshtml" />
     <None Include="Views\Carteira\Index.cshtml" />
+    <None Include="Views\Category\AddOrEdit.cshtml" />
+    <None Include="Views\Category\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -43,6 +45,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="23.1.44" />
   </ItemGroup>
 
 </Project>

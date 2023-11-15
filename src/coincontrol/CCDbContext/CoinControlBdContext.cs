@@ -1,10 +1,10 @@
-﻿using coincontrol.Models.Transaction;
-using coincontrol.Models.Usuario;
+﻿using coincontrol.Models.Usuario;
 using Microsoft.EntityFrameworkCore;
 using coincontrol.Models.TransacoesA;
 using coincontrol.Models.Carteira;
 using coincontrol.Models.Meta;
 using coincontrol.Models.Categoria;
+using coincontrol.Models;
 
 namespace coincontrol.CCDbContext
 {
@@ -13,10 +13,6 @@ namespace coincontrol.CCDbContext
         public CoinControlBdContext(DbContextOptions<CoinControlBdContext> options) : base(options) { }
 
         public DbSet<Usuario> Usuarios { get; set; }
-
-        public DbSet<Expense> Expenses { get; set; }
-
-        public DbSet<coincontrol.Models.Transaction.Income> Income { get; set; }
 
         public DbSet<Models.TransacoesA.TransacoesA> TransacoesA { get; set; }
 
