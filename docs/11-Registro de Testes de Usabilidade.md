@@ -88,7 +88,7 @@
 **TESTE 1 - CRIAR UM NOVO USUÁRIO**
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
-|---|---|---|
+|---|---|---|---|---|
 | Adolescente  |   |   |   |   |
 | Adulto |   |   |   |   |
 | Idoso  |   |   |   |   |
@@ -96,7 +96,7 @@
 **TESTE 2 - FAZER LOGIN NA APLICAÇÃO**
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
-|---|---|---|
+|---|---|---|---|---|
 | Adolescente  |   |   |   |   |
 | Adulto |   |   |   |   |
 | Idoso  |   |   |   |   |
@@ -104,7 +104,7 @@
 **TESTE 3 - CRIAR UMA NOVA CATEGORIA**
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
-|---|---|---|
+|---|---|---|---|---|
 | Adolescente  |   |   |   |   |
 | Adulto |   |   |   |   |
 | Idoso  |   |   |   |   |
@@ -112,7 +112,7 @@
 **TESTE 4 - CADASTRAR UMA META FINANCEIRA A SER ALCANÇADA EM DETERMINADA CATEGORIA**
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
-|---|---|---|
+|---|---|---|---|---|
 | Adolescente  |   |   |   |   |
 | Adulto |   |   |   |   |
 | Idoso  |   |   |   |   |
@@ -120,7 +120,7 @@
 **TESTE 5 - REGISTRAR UM GANHO E UMA DESPESA FINANCEIRA NA PÁGINA DE TRANSAÇÕES**
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
-|---|---|---|
+|---|---|---|---|---|
 | Adolescente  |   |   |   |   |
 | Adulto |   |   |   |   |
 | Idoso  |   |   |   |   |
@@ -128,7 +128,7 @@
 **TESTE 6 - EXPORTAR DADOS FINANCEIROS EM FORMATO .pdf**
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
-|---|---|---|
+|---|---|---|---|---|
 | Adolescente  |   |   |   |   |
 | Adulto |   |   |   |   |
 | Idoso  |   |   |   |   |
@@ -136,7 +136,7 @@
 **TESTE 7 - VISUALIZAR O PAINEL DE ACOMPANHAMENTO E CONSEGUIR LOCALIZAR SEU GANHO TOTAL, SEU GASTO TOTAL E O BALANÇO DOS VALORES**
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
-|---|---|---|
+|---|---|---|---|---|
 | Adolescente  |   |   |   |   |
 | Adulto |   |   |   |   |
 | Idoso  |   |   |   |   |
