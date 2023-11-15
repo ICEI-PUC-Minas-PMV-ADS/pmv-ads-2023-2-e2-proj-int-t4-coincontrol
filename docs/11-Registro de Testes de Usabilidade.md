@@ -1,7 +1,10 @@
 # Registro de Testes de Usabilidade
 
-Após a realização dos Testes de Usabilidade, do tipo estática, feita pela equipe de desenvolvimento, foi elaborado o relatório apresentado abaixo, baseado nas 10 heurísticas de Nielsen para verificação de usabilidade de sistemas.
-A coluna avaliação foi preenchida conforme escala a seguir:
+<p>Conforme previsto no plano de testes, foram realizados testes estáticos e dinâmicos, apresentados a seguir.
+
+## Testes de Usabilidade do tipo Estática
+<p>Os Testes de Usabilidade, do tipo estática, foram feitos pela equipe de planejamento e desenvolvimento e foi elaborado o relatório apresentado abaixo, baseado nas 10 heurísticas de Nielsen para verificação de usabilidade de sistemas.
+<p>A coluna avaliação foi preenchida conforme escala a seguir:
 
 **ESCALA UTILIZADA NA AVALIAÇÃO DE USABILIDADE:**
 
@@ -79,7 +82,64 @@ A coluna avaliação foi preenchida conforme escala a seguir:
 | Os campos de ajuda e documentação são facilmente encontrados pelo usuário? |  4 |  Problema que será resolvido com prioridade. |  
 | A aplicação possui documentação/informação básica disponível para o usuário (funcionamento, utilidade, limitações, políticas de privacidade, entre outros)? | 1  | Pode ser implementado em etapas subsequentes.  | 
 
+## Testes de Usabilidade do tipo Dinâmica
+<p>Os Testes de Usabilidade, do tipo dinâmica, foram feitos com o auxílio de três usuários, uma adolescente, um adulto e um idoso. Os resultados dos testes estão apresentados nos quadros apresentados a seguir:
 
+**TESTE 1 - CRIAR UM NOVO USUÁRIO**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+|---|---|---|
+| Adolescente  |   |   |   |   |
+| Adulto |   |   |   |   |
+| Idoso  |   |   |   |   |
+
+**TESTE 2 - FAZER LOGIN NA APLICAÇÃO**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+|---|---|---|
+| Adolescente  |   |   |   |   |
+| Adulto |   |   |   |   |
+| Idoso  |   |   |   |   |
+
+**TESTE 3 - CRIAR UMA NOVA CATEGORIA**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+|---|---|---|
+| Adolescente  |   |   |   |   |
+| Adulto |   |   |   |   |
+| Idoso  |   |   |   |   |
+
+**TESTE 4 - CADASTRAR UMA META FINANCEIRA A SER ALCANÇADA EM DETERMINADA CATEGORIA**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+|---|---|---|
+| Adolescente  |   |   |   |   |
+| Adulto |   |   |   |   |
+| Idoso  |   |   |   |   |
+
+**TESTE 5 - REGISTRAR UM GANHO E UMA DESPESA FINANCEIRA NA PÁGINA DE TRANSAÇÕES**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+|---|---|---|
+| Adolescente  |   |   |   |   |
+| Adulto |   |   |   |   |
+| Idoso  |   |   |   |   |
+
+**TESTE 6 - EXPORTAR DADOS FINANCEIROS EM FORMATO .pdf**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+|---|---|---|
+| Adolescente  |   |   |   |   |
+| Adulto |   |   |   |   |
+| Idoso  |   |   |   |   |
+
+**TESTE 7 - VISUALIZAR O PAINEL DE ACOMPANHAMENTO E CONSEGUIR LOCALIZAR SEU GANHO TOTAL, SEU GASTO TOTAL E O BALANÇO DOS VALORES**
+
+| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+|---|---|---|
+| Adolescente  |   |   |   |   |
+| Adulto |   |   |   |   |
+| Idoso  |   |   |   |   |
 
 
 Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
