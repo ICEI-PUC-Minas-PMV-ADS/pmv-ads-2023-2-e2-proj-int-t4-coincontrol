@@ -24,9 +24,9 @@ Os testes de usabilidade serão conduzidos pelos membros da equipe de planejamen
 
 ### Etapas da Sessão de Teste
 
-1. **Introdução(5 minutos):** Apresentação da equipe de teste, explicação do objetivo dos testes e obtenção do consentimento informado dos participantes.
-2. **Treinamento(10 minutos):** Explicação do funcionamento da aplicação CoinControl e orientação sobre o uso das ferramentas de videoconferência e compartilhamento de tela.
-3. **Execução das Tarefas Remotas(60 minutos):** Cada participante realizará as tarefas designadas, com o facilitador observando e fazendo anotações. As tarefas serão realizadas na seguinte ordem:
+1. **Introdução (5 minutos):** Apresentação da equipe de teste, explicação do objetivo dos testes e obtenção do consentimento informado dos participantes.
+2. **Treinamento (10 minutos):** Explicação do funcionamento da aplicação CoinControl e orientação sobre o uso das ferramentas de videoconferência e compartilhamento de tela.
+3. **Execução das Tarefas Remotas (60 minutos):** Cada participante realizará as tarefas designadas, com o facilitador observando e fazendo anotações. As tarefas serão realizadas na seguinte ordem:
 
    - ***Tarefa 1:*** Criar um usuário.
    - ***Tarefa 2:*** Fazer login na aplicação.
@@ -36,7 +36,7 @@ Os testes de usabilidade serão conduzidos pelos membros da equipe de planejamen
    - ***Tarefa 6:*** Exportar dados financeiros em formato .pdf.
    - ***Tarefa 7:*** Visualizar o painel de acompanhamento e conseguir localizar seu ganho total, seu gasto total e o balanço dos valores.
 
-4. **Entrevista Pós-Teste:** Após a conclusão das tarefas, os participantes serão entrevistados remotamente para obter feedback adicional sobre sua experiência com a aplicação.
+4. **Entrevista Pós-Teste (15 minutos):** Após a conclusão das tarefas, os participantes serão entrevistados remotamente para obter feedback adicional sobre sua experiência com a aplicação.
 
 ## Métricas Coletadas
 As métricas coletadas durante os testes remotos incluirão:
