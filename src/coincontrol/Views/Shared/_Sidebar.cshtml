@@ -12,20 +12,20 @@
     menuItems.Add(new
     {
         text = "Dashboard",
-        url = "/",
+        url = "/Dashboard/Index",
         iconCss = "fa-solid fa-box",
     });
     menuItems.Add(new
     {
         text = "Categorias",
-        url = "/Category",
+        url = "/Category/Index",
         iconCss = "fa-solid fa-folder-closed",
     });
     menuItems.Add(new
     {
         text = "Transações",
         iconCss = "fa-solid fa-arrow-right-arrow-left",
-        url = "/Transaction"
+        url = "/Transaction/Index"
     });
     menuItems.Add(new
     {
@@ -51,8 +51,8 @@
         url = "#"
     });
 }
-
-
+@if(User.Identity.IsAuthenticated)
+{
 <ejs-sidebar id="sidebar" width="290px" enableDock dockSize="100px"
              target=".dock-target" enableGestures="false">
     <e-content-template>
@@ -69,7 +69,10 @@
             <img class="profile-pic" src="~/profile.jpg" />
             <div class="titles d-flex flex-column ps-3">
                 <h6 class="mb-0">CoinControl</h6>
-                <span class="text-muted">Usuário</span>
+                <span class="text-muted">@User.Identity.Name</span>
+            </div>
+            <div class="titles d-flex flex-column ps-3">
+                <a class="text-muted" asp-action="Logout" asp-controller="Usuarios">Sair</a>
             </div>
         </div>
 
@@ -89,3 +92,4 @@
     });
 
 </script>
+}
