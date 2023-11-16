@@ -1,43 +1,30 @@
 ﻿@model coincontrol.Models.Usuario.Usuario
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["PageTitle"] = "Crie seu usuário";
 }
 
-<h1>Crie o seu usuário!</h1>
-
-<h4>Usuario</h4>
-<hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Nome" class="control-label"></label>
-                <input asp-for="Nome" class="form-control" />
-                <span asp-validation-for="Nome" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Senha" class="control-label"></label>
-                <input asp-for="Senha" class="form-control" />
-                <span asp-validation-for="Senha" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Crie o seu perfil" class="btn btn-success" />
-                <a asp-action="Index" asp-controller="Home" class="btn btn-info">Voltar</a>
-
-            </div>
-        </form>
+    <div class="col-md-7">
+        <div class="widget p-5" style="background-color:#212b36">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="mb-3">
+                    <ejs-textbox id="Nome" placeholder="Nome" ejs-for="Nome" floatLabelType="Always"></ejs-textbox>
+                    <span asp-validation-for="Nome" class="text-danger fs-6"></span>
+                </div>
+                <div class="mb-3">
+                    <ejs-textbox id="Email" placeholder="Email" ejs-for="Email" floatLabelType="Always"></ejs-textbox>
+                    <span asp-validation-for="Email" class="text-danger fs-6"></span>
+                </div>
+                <div class="mb-3">
+                    <ejs-textbox type="password" id="Senha" placeholder="Senha" ejs-for="Senha" floatLabelType="Always"></ejs-textbox>
+                    <span asp-validation-for="Senha" class="text-danger fs-6"></span>
+                </div>
+                <ejs-button id="submit" type="submit" content="Criar" cssClass="e-success"></ejs-button> |
+                <a class="btn btn-danger" asp-action="Login">Voltar</a>
+            </form>
+        </div>
     </div>
+
 </div>
-
-
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

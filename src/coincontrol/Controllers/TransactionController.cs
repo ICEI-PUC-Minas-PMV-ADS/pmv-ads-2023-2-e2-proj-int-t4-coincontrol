@@ -54,24 +54,13 @@ namespace coincontrol.Controllers
 
                 if (transaction.TransactionId == 0)
                 {
-                    if (categoria.Modalidade.Equals("Entrada") && meta != null)
+                    if (categoria.Modalidade.Equals("Meta") && meta != null)
                         meta.ValorParcial += decimal.Parse(transaction.Valor.ToString());
 
                     _context.Add(transaction);
                 }
                 else
                 {
-                   if(meta.ValorParcial > decimal.Parse(transaction.Valor.ToString()))
-                    {
-                        var diferenca = meta.ValorParcial - decimal.Parse(transaction.Valor.ToString());
-                        meta.ValorParcial -= diferenca;
-
-                    } else
-                    {
-                        var valorParcialAtualizado = decimal.Parse(transaction.Valor.ToString()) - meta.ValorParcial;
-                        meta.ValorParcial += valorParcialAtualizado;
-                    }
-                        
                     _context.Update(transaction);
                 }
                   
@@ -95,15 +84,21 @@ namespace coincontrol.Controllers
             if (transaction != null)
             {
                 var categoria = await _context.Categories
-               .FirstOrDefaultAsync(c => c.CategoryId == transaction.CategoryId);
+                    .FirstOrDefaultAsync(c => c.CategoryId == transaction.CategoryId);
 
-                var meta = await _context.Metas
+                if (categoria != null) 
+                {
+                    var meta = await _context.Metas
                     .FirstOrDefaultAsync(m => m.Categoria == categoria);
 
-                meta.ValorParcial -= decimal.Parse(transaction.Valor.ToString());
+                    if (meta != null)
+                    {
+                        meta.ValorParcial -= decimal.Parse(transaction.Valor.ToString());
 
-                if (meta.ValorParcial < decimal.Parse("0,00"))
-                    meta.ValorParcial = decimal.Parse("0,00");
+                        if (meta.ValorParcial < decimal.Parse("0,00"))
+                            meta.ValorParcial = decimal.Parse("0,00");
+                    }
+                }
 
                 _context.Transactions.Remove(transaction);
             }

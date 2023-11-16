@@ -1,32 +1,29 @@
 ﻿@model coincontrol.Models.Meta.Meta
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["PageTitle"] = "Edite Meta";
 }
 
-<h1>Deseja alterar o valor de sua Meta?</h1>
-
-<hr />
 <div class="row">
-    <div class="col-md-4">
-        <form asp-action="Edit">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdMeta" />
-            <div class="form-group">
-                <label asp-for="ValorTotal" class="control-label"></label>
-                <input value="@Model.ValorTotal" id="ValorTotal" name="ValorTotal" required data-val-required="O Valor total deve ser informado" class="form-control" />
-                <span asp-validation-for="ValorTotal" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Salvar alteração" class="btn btn-success" />
-            </div>
-            <div>
+    <div class="col-md-7">
+        <div class="widget p-5" style="background-color:#212b36">
+            <form asp-action="Edit">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="IdMeta" />
+                <input type="hidden" asp-for="ValorParcial" />
+                <div class="mb-3">
+                    <ejs-numerictextbox id="ValorTotal" placeholder="Meta" ejs-for="ValorTotal" floatLabelType="Always"></ejs-numerictextbox>
+                    <span asp-validation-for="ValorTotal" class="text-danger fs-6"></span>
+                </div>
+                <ejs-button id="submit" type="submit" content="Alterar" cssClass="e-success"></ejs-button> |
                 <a class="btn btn-danger" asp-action="Index">Voltar</a>
-            </div>
-        </form>
+            </form>
+        </div>
+
+    </div>
+    <div class="col-md-5">
+        <div class="widget h-100 d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-shapes fa-2xl"></i>
+        </div>
     </div>
 </div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

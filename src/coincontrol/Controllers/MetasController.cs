@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using coincontrol.CCDbContext;
 using coincontrol.Models.Meta;
 using System.Security.Claims;
+using coincontrol.Models;
 
 namespace coincontrol.Controllers
 {
@@ -48,7 +49,7 @@ namespace coincontrol.Controllers
         // GET: Metas/Create
         public IActionResult Create()
         {
-            ViewData["IdCategoria"] = new SelectList(_context.Categories, "CategoryId", "Título");
+            ViewData["IdCategoria"] = _context.Categories.Where(c => c.Modalidade == "Meta").ToList();
             return View();
         }
 
@@ -100,11 +101,11 @@ namespace coincontrol.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ValorTotal")] Meta meta)
+        public async Task<IActionResult> Edit(int id,[Bind("IdMeta,ValorTotal,ValorParcial")] Meta meta)
         {
             if (id != meta.IdMeta)
             {
-                meta.IdMeta = id;
+                return NotFound();
             }
 
             if (ModelState.IsValid)
