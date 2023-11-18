@@ -192,9 +192,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RNF_004	- O site deve ser compatível com os principais navegadores do mercado (Firefox, Chrome e Edge). |
 | Objetivo do Teste 	| Verificar se o site está compatível para ser acessado pelos principais navegadores do mercado (Firefox, Chrome e Edge). |
 |Resultado esperado | O site se apresenta compatível com os principais navegadores do mercado (Firefox, Chrome e Edge).|
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | A aplicação é compatível nos navegadores listados |
+|Avaliação | Nível 0 |
+|Evidência | <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/9fd987e7-22c6-4f5a-b17d-84d258e04393" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/fee0d05c-079f-45e9-94ec-006ead8481a2" width="300"/>  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/0f105158-ce00-4897-b3c9-0de86bb1e2c7" width="300"/> |
 
 
 | **Caso de Teste** 	| **CT-18 – Hospedagem do site**	|
