@@ -26,6 +26,8 @@ namespace coincontrol.Models.Usuario
         [Column("senha")]
         [Required(ErrorMessage = "Obrigatório informar a senha!")]
         [DataType(DataType.Password)]
+        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$",
+            ErrorMessage = "A senha deve ter no mínimo oito caracteres, incluindo pelo menos uma letra maiúscula, um número e um símbolo.")]
         [MaxLength(100)]
         public string Senha { get; set; }
     }
