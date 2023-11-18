@@ -118,64 +118,58 @@
 
 **TESTE 1 - CRIAR UM NOVO USUÁRIO**
 
-| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adolescente  |   |   |   |   |
-| Adulto |   |   |   |   |
-| Idoso  |   |   |   |   |
+| Adulto  | Novo usuário criado com sucesso. | Não cadastro de senha conforme a regra na primeira tentativa. | 1m17s | Usuáro ficou satisfeito. Porém sugeriu que a regra de senha já esteja visível antes da primeira tentativa errada ter ocorrido, como está atualmente. Usuário sugeriu que o sistema faça a checagem de e-mail. |
+| Idoso |   |   |   |   |
+| Adolescente |   |   |   |   |
 
 **TESTE 2 - FAZER LOGIN NA APLICAÇÃO**
 
-| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adolescente  |   |   |   |   |
-| Adulto |   |   |   |   |
-| Idoso  |   |   |   |   |
+| Adulto  | Realização do login com sucesso.  | Nenhum.  | 41s  | Usuário satisfeito.  |
+| Idoso |   |   |   |   |
+| Adolescente |   |   |   |   |
 
 **TESTE 3 - CRIAR UMA NOVA CATEGORIA**
 
-| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adolescente  |   |   |   |   |
-| Adulto |   |   |   |   |
-| Idoso  |   |   |   |   |
+| Adulto  | Usuário criou nova categoria com sucesso. | Usuário não conseguiu inserir o ícone.  | 47s  | Usuário ficou parcialmente satisfeito e fez as seguintes sugestões: é necessário o local no site que tenha as informações básicas sobre como operar o site, qual é seu objetivo e o que é entendido como carteira, transação, categoria...; que a inserção do ícone seja mais intuitiva; e que ao editar uma categoria, o botão de confirmação seja "salvar" em vez de "adicionar".   |
+| Idoso |   |   |   |   |
+| Adolescente |   |   |   |   |
 
 **TESTE 4 - CADASTRAR UMA META FINANCEIRA A SER ALCANÇADA EM DETERMINADA CATEGORIA**
 
-| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adolescente  |   |   |   |   |
-| Adulto |   |   |   |   |
-| Idoso  |   |   |   |   |
+| Adulto  | Não houve sucesso, pois o usuário não conseguiu cadastrar nova meta para uma categoria que ele tinha criado. | O sistema só estava permitindo a criação de novas metas para a categoria Viagem e não para as demais categorias. | Não se aplica. | Usuário sugere que na tela de cadastro de nova meta o campo categoria esteja acima do campo de valor da meta (invertido ao que está atualmente). |
+| Idoso |   |   |   |   |
+| Adolescente |   |   |   |   |
 
 **TESTE 5 - REGISTRAR UM GANHO E UMA DESPESA FINANCEIRA NA PÁGINA DE TRANSAÇÕES**
 
-| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adolescente  |   |   |   |   |
-| Adulto |   |   |   |   |
-| Idoso  |   |   |   |   |
+| Adulto  | Transações de ganho e despesas lançadas com sucesso.  | Nenhum. | 1m50s | Usuário satisfeito. Sugeriu que o $ seja trocado por R$ e que sejam ajustadas as formatações de ponto e vírgula, que estão trocadas.  |
+| Idoso |   |   |   |   |
+| Adolescente |   |   |   |   |
 
-**TESTE 6 - EXPORTAR DADOS FINANCEIROS EM FORMATO .pdf**
+**TESTE 6 - VISUALIZAR O PAINEL DE ACOMPANHAMENTO E CONSEGUIR LOCALIZAR SEU GANHO TOTAL, SEU GASTO TOTAL E O BALANÇO DOS VALORES**
 
-| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adolescente  |   |   |   |   |
-| Adulto |   |   |   |   |
-| Idoso  |   |   |   |   |
+| Adulto  | Visualização realizada com sucesso.  | Nenhum.  | 10s  | Usuário satisfeito.  |
+| Idoso |   |   |   |   |
+| Adolescente |   |   |   |   |
 
-**TESTE 7 - VISUALIZAR O PAINEL DE ACOMPANHAMENTO E CONSEGUIR LOCALIZAR SEU GANHO TOTAL, SEU GASTO TOTAL E O BALANÇO DOS VALORES**
+**TESTE 7 - EXPORTAR DADOS FINANCEIROS EM FORMATO .pdf**
 
-| **USUÁRIO** | **TAXA DE SUCESSO** | **TAXA DE ERROS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO** | 
+| **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adolescente  |   |   |   |   |
-| Adulto |   |   |   |   |
-| Idoso  |   |   |   |   |
+| Adulto  |   |   |   |   |
+| Idoso |   |   |   |   |
+| Adolescente |   |   |   |   |
 
-
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Registro de Testes de Usabilidade”.
-
-> **Links Úteis**:
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+Os testes realizados mostram que o sistema já permite seu funcionamento, porém ainda apresenta alguns ajustes a serem realizados pela equipe de desenvolvimento. As telas estão bem configuradas para a navegação do usuário com certa facilidade, porém melhorias ainda podem ser implementadas no sentido de aumentar a satisfação na experiência do usuário, item considerado muito importante pela equipe de desenvolvimento.
