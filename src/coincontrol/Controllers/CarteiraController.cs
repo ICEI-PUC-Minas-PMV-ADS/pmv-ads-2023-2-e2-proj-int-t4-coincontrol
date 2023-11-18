@@ -21,10 +21,13 @@ namespace coincontrol.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var carteiras = _context.Carteira.ToList();
-            return View(carteiras);
+            //var carteiras = _context.Carteira.ToList();
+            //return View(carteiras);
+
+            var carteira = _context.Carteira.Include(c => c.Usuario);
+            return View(await carteira.ToListAsync());
         }
 
         public IActionResult Create()
@@ -40,7 +43,8 @@ namespace coincontrol.Controllers
 
             if (usuario != null)
             {
-                novaCarteira.idUsuario = usuario.idUsuario;
+                //novaCarteira.idUsuario = usuario.idUsuario;
+                novaCarteira.Usuario = usuario;
 
                 if (ModelState.IsValid)
                 {
@@ -83,32 +87,34 @@ namespace coincontrol.Controllers
             }
 
            
-            var existingCarteira = await _context.Carteira.FindAsync(id);
-            if (existingCarteira == null)
-            {
-                return NotFound();
-            }
+            //var existingCarteira = await _context.Carteira.FindAsync(id);
+            //if (existingCarteira == null)
+            //{
+            //    return NotFound();
+            //}
 
             
-            _context.Entry(existingCarteira).State = EntityState.Detached;
+            //_context.Entry(existingCarteira).State = EntityState.Detached;
 
-            var emailUsuario = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == emailUsuario);
-            if (usuario == null)
-            {
-                ModelState.AddModelError(string.Empty, "Usuário não encontrado.");
-                return View(carteira);
-            }
+            //var emailUsuario = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            //var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == emailUsuario);
+            //if (usuario == null)
+            //{
+            //    ModelState.AddModelError(string.Empty, "Usuário não encontrado.");
+            //    return View(carteira);
+            //}
 
-            existingCarteira.saldoInicial = carteira.saldoInicial;
-            existingCarteira.ano = carteira.ano;
-            existingCarteira.mes = carteira.mes;
-            existingCarteira.idUsuario = usuario.idUsuario;
+            //existingCarteira.saldoInicial = carteira.saldoInicial;
+            //existingCarteira.ano = carteira.ano;
+            //existingCarteira.mes = carteira.mes;
+            //existingCarteira.idUsuario = usuario;
 
             if (ModelState.IsValid)
             {
                 try
                 {
+                    // Adicionei a atualização do modelo no banco
+                    _context.Update(carteira);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)

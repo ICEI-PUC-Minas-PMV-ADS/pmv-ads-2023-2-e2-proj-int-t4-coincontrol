@@ -10,8 +10,8 @@ namespace coincontrol.Models.Carteira
         [Column("idCarteira")]
         public int idCarteira { get; set; }
 
-        [Column("idUsuario")]
-        public int idUsuario { get; set; }
+        //[Column("idUsuario")]
+        //public int idUsuario { get; set; }
 
         [Column("saldoInicial")]
         public decimal saldoInicial { get; set; }

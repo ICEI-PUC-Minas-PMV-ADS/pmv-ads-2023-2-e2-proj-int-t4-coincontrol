@@ -3,9 +3,9 @@
 
 <h1>Editar Carteira</h1>
 
-<form asp-action="Edit" asp-route-id="@Model.idCarteira" method="post">
+<form asp-action="Edit">
     <input type="hidden" asp-for="idCarteira" />
-
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <div class="form-group">
         <label asp-for="saldoInicial" class="control-label">Saldo Inicial</label>
         <input asp-for="saldoInicial" class="form-control" />
