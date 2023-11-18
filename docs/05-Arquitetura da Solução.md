@@ -39,11 +39,6 @@ Lista de tecnologias do projeto.
 
 ## Hospedagem
 
-Aplicação ainda não hospedada.
+Aplicação hospedada no seguinte endereço: https://coincontrolpuc.azurewebsites.net/
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+
