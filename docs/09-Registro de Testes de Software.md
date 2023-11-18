@@ -237,6 +237,6 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 
 ## Avaliação
 
-Observa-se que as funcionalidades do sistema estão sendo implementadas. Já foi concluída a funcionalidade de cadastro de login, acesso logado ao sistema e registro dos dados no banco de dados. Para as próximas etapas, pretende-se dar continuidade ao desenvolvimento das funcionalidades propostas e corrigir possíveis melhorias que foram levantadas/sugeridas nos testes da etapa atual.
+Observa-se que as funcionalidades do sistema que foram definidas com alta prioridade pela equipe de desenvolvimento já foram estabelecidas e encontram-se em funcionamento, os demais casos de testes não realizados estão ligados a requisitos de baixa prioridade e serão implementados na próxima fase.
 
 
