@@ -158,7 +158,17 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Resultado esperado | A aplicação possui responsividade adequada para acesso em computador e dispositivo móvel.|
 |Resultado obtido |Observa-se que não a barra de rolagem horizontal para visualizar a tabela completa |
 |Avaliação | 3 |
-|Evidência | <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277199072-2ae0c075-7955-4a2b-a45a-d6311548fdaf.png" width="300"/> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277199390-88ec1956-2a92-4e4f-97c6-708ba06ccabd.png" width="300"/>
+|Evidência | <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277199072-2ae0c075-7955-4a2b-a45a-d6311548fdaf.png" width="300"/> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277199390-88ec1956-2a92-4e4f-97c6-708ba06ccabd.png" width="300"/ >
+
+| **Caso de Teste V2** | **CT-14 - Responsividade** |
+|---|---|
+|Requisito Associado | RNF_001	- O site deverá ser responsivo permitindo a visualização em um dispositivo móvel. |
+| Objetivo do Teste 	| Testar se o site está responsivo para acesso em computador e dispositivo móvel. |
+|Resultado esperado | A aplicação possui responsividade adequada para acesso em computador e dispositivo móvel. |
+|Resultado obtido | Com realização de edições no código, o problema retratado na primeira versão desse teste foi solucionado. |
+|Avaliação | Nível 0 |
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/29abbc7c-0cf7-48e5-8e98-18a76b467e76" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/62ab07d0-7f62-4d7d-9a60-513dcabd3177" width="300"/> |
+
 | **Caso de Teste** 	| **CT-15 – Publicação do site**	|
 |---|---|
 |Requisito Associado | RNF_002	- A aplicação deve ser publicada em ambiente acessível na internet. |
