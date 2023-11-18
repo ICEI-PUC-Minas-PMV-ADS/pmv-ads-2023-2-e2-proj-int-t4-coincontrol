@@ -51,6 +51,15 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Avaliação | Nível 3 |
 |Evidência | <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/7fa0f0de-354d-4cc3-8c3c-ed72f286fda0" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/4204c3bf-1557-4f26-8e88-45f0acc839d4" width="300"/> |
 
+| **Caso de Teste V2** | **CT-03 - Critérios para a senha** |
+|---|---|
+|Requisito Associado | RNF_005	- A senha do usuário deverá ter, no mínimo, oito caracteres com símbolo, número e letra maiúscula. |
+| Objetivo do Teste 	| Verificar se o site exige que a senha do usuário tenha, no mínimo, oito caracteres com símbolo, número e letra maiúscula. |
+|Resultado esperado | O site exige que a senha do usuário tenha, no mínimo, oito caracteres com símbolo, número e letra maiúscula. |
+|Resultado obtido | Com realização de edições no código, o problema retratado na primeira versão desse teste foi solucionado. |
+|Avaliação | Nível 0 |
+|Evidência |<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/a0f1d8ec-4576-447a-90ad-45cfb11e0ad8" width="300"/> |
+
 
 | **Caso de Teste** 	| **CT-04 – Inserir transações**	|
 |---|---|
