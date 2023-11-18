@@ -66,27 +66,27 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RF_001	- A aplicação web deve permitir ao usuário inserir detalhes de suas transações financeiras (descrição, data, categoria, valor e método de pagamento). |
 | Objetivo do Teste 	| Verificar se o usuário consegue inserir uma transação financeira completa. |
 | Resultado esperado | Consegue-se realizar a inserção da transação com todos os detalhamentos. |
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | A aplicação permite que o usuário registre suas transações. |
+|Avaliação | Nível 0 |
+|Evidência | <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/3ea33929-7fe5-4aa3-8c4c-2041abf4e315" width="300"/>|
 
 | **Caso de Teste** 	| **CT-05 – Inserir gastos recorrentes**	|
 |---|---|
 |Requisito Associado | RF_002	- A aplicação deve permitir ao usuário inserir seus gastos recorrentes que serão lançados automaticamente de forma mensal. |
 | Objetivo do Teste 	| Verificar se o usuário consegue inserir gastos recorrentes. |
 |Resultado esperado | Usuário consegue inserir gastos recorrentes. |
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | Foi possível, através do uso de categorias, criar os gastos recorrentes dos usuários. |
+|Avaliação | Nível O |
+|Evidência | <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/fc44cc71-bd99-4bec-8e85-5e5ddadc25dd" width="300"/> |
 
 | **Caso de Teste** 	| **CT-06 – Visualizar saldo atual detalhado**	|
 |---|---|
 |Requisito Associado | RF_003	- A aplicação web deve ser capaz de mostrar ao usuário um resumo do saldo atual de suas contas, bem como uma visão geral das despesas e receitas. |
 | Objetivo do Teste 	| Verificar se o usuário consegue visualizar um resumo do seu saldo atual. |
 |Resultado esperado | Usuário consegue visualizar seu saldo, com despesas e receitas. |
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | A aplicação garante ao usuário visualizar o resumo geral de seu saldo |
+|Avaliação | Nível 0 |
+|Evidência | <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/613458a8-8d6b-48c4-b6ad-f2cd72caaed0" width="300"/> |
 
 | **Caso de Teste** 	| **CT-07 – Configurar alertas e notificações**	|
 |---|---|
@@ -120,7 +120,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RF_007	- O aplicativo deve permitir que os usuários estabeleçam um orçamento mensal para diferentes categorias de despesas. |
 | Objetivo do Teste 	| Checar se a aplicação permite ao usuário estabelecer um orçamento mensal para diferentes categorias de despesas. |
 |Resultado esperado | A aplicação permite o estabelecimento de orçamento mensal para categorias de despesas. |
-|Resultado obtido | ********* |
+|Resultado obtido ||
 |Avaliação | ********* |
 |Evidência | ********* |
 
@@ -161,21 +161,21 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Evidência | <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277199072-2ae0c075-7955-4a2b-a45a-d6311548fdaf.png" width="300"/> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277199390-88ec1956-2a92-4e4f-97c6-708ba06ccabd.png" width="300"/>
 | **Caso de Teste** 	| **CT-15 – Publicação do site**	|
 |---|---|
-|Requisito Associado | RNF_002	- A aplicação deve ser publicada em ambiente acessível na internet (Github). |
+|Requisito Associado | RNF_002	- A aplicação deve ser publicada em ambiente acessível na internet. |
 | Objetivo do Teste 	| Checar o local de publicação do site. |
-|Resultado esperado | O site está publicado em ambiente acessível na internet (Github).|
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado esperado | O site está publicado em ambiente acessível na internet.|
+|Resultado obtido | O objetivo foi concluído. A aplicação está hospedada na internet pelo sistema de nuvem da Microsoft. |
+|Avaliação | Nível 0 |
+|Evidência | <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/3af3fa1e-42a6-4a86-b4e0-f465aa4e5843" width="300"/> |
 
 | **Caso de Teste** 	| **CT-16 – Usabilidade do site**	|
 |---|---|
 |Requisito Associado | RNF_003	- A aplicação deve ser fácil de usar e navegar, com interfaces claras e intuitivas. |
 | Objetivo do Teste 	| Testar se a aplicação está fácil de usar, com interfaces claras e intuitivas. |
 |Resultado esperado | O site se mostra com boa usabilidade.|
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | Nos testes realizados, a aplicação se mostra com boa usabilidades. Suas interfaces são claras e intuitivas para os usuários. |
+|Avaliação | Nível 0 |
+|Evidência | <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/9765e88b-07a3-4297-9f2e-617094354966" width="300"/> |
 
 | **Caso de Teste** 	| **CT-17 – Compatibilidade do site com navegadores**	|
 |---|---|
@@ -192,27 +192,27 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RNF_006	- A aplicação deverá ser hospedada no servidor Microsoft Azure. |
 | Objetivo do Teste 	| Conferir se o site foi hospedado no servidor Microsoft Azure. |
 |Resultado esperado | O site está hospedado no servidor Microsoft Azure.|
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | Site hospedado no Azure |
+|Avaliação | Nível 0 |
+|Evidência | <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/3af3fa1e-42a6-4a86-b4e0-f465aa4e5843" width="300"/> |
 
 | **Caso de Teste** 	| **CT-19 – Tecnologias na construção do site**	|
 |---|---|
 |Requisito Associado | RNF_007	- O aplicativo deve ser elaborado com as tecnologias C#, sqlserver, Microsoft Azure. |
 | Objetivo do Teste 	| Verificar se o aplicativo foi elaborado com as tecnologias C#, sqlserver, Microsoft Azure. |
 |Resultado esperado | O site possui tecnologias C#, sqlserver, Microsoft Azure.|
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | A aplicação foi construída com as tecnologias planejadas. |
+|Avaliação | Nível 0. |
+|Evidência | [Código Fonte de toda aplicação desenvolvida](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/tree/main/src/coincontrol) |
 
 | **Caso de Teste** 	| **CT-20 – Limite para lançamento de despesas**	|
 |---|---|
 |Regra associada | Regra 02	- Não haverá limite de quantidade para o lançamento de despesas. |
 | Objetivo do Teste 	| Verificar se o aplicativo não está limitando a quantidade de lançamento de despesas. |
 |Resultado esperado | O site não limita o lançamento das despesas. |
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | O usuário pode lançar quantas despesas ele quiser. |
+|Avaliação | Nível 0 |
+|Evidência | <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/3ea33929-7fe5-4aa3-8c4c-2041abf4e315" width="300"/> |
 
 | **Caso de Teste** 	| **CT-21 – Quantidade de metas**	|
 |---|---|
