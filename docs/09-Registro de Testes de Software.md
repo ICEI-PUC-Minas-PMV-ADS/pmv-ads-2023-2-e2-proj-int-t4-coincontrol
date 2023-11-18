@@ -158,7 +158,7 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Resultado esperado | A aplicação possui responsividade adequada para acesso em computador e dispositivo móvel.|
 |Resultado obtido |Observa-se que não a barra de rolagem horizontal para visualizar a tabela completa |
 |Avaliação | 3 |
-|Evidência | <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277199072-2ae0c075-7955-4a2b-a45a-d6311548fdaf.png" width="300"/> <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277199390-88ec1956-2a92-4e4f-97c6-708ba06ccabd.png" width="300"/ >
+|Evidência | <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/127675409/277199072-2ae0c075-7955-4a2b-a45a-d6311548fdaf.png" width="300"/>
 
 | **Caso de Teste V2** | **CT-14 - Responsividade** |
 |---|---|
