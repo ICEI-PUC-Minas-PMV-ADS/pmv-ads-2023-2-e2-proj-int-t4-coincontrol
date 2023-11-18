@@ -14,9 +14,9 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 
 # Instruções de acesso
 
-A aplicação poderá ser acessada no seguinte link: https://localhost:44356/
+A aplicação poderá ser acessada no seguinte link:  https://coincontrolpuc.azurewebsites.net/
 
 # Usuário teste
 
-E-mail: teste1@teste.com
-Senha: 123456
+E-mail: testee@teste.com
+Senha: Abcd123!
