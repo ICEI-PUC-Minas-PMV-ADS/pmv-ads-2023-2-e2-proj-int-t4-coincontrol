@@ -1,4 +1,4 @@
-﻿@model IEnumerable<coincontrol.Models.Carteira.Carteiras>
+﻿@model IEnumerable<coincontrol.Models.Carteira.Carteira>
 
 <h1>Lista de Carteiras</h1>
 <p>
@@ -7,38 +7,37 @@
 <table class="table table-bordered">
     <thead>
         <tr>
-            <th>ID</th>
-            <th>ID do Usuário</th>
-            <th>Saldo Inicial</th>
-            <th>Saldo Parcial</th>
-            <th>Ano</th>
-            <th>Mês</th>
-            <th>Ações</th>
+            <th class="table-header" style="font-weight: bold; color: white;">ID</th>
+            <th class="table-header" style="font-weight: bold; color: white;">ID do Usuário</th>
+            <th class="table-header" style="font-weight: bold; color: white;">Saldo Inicial</th>
+            <th class="table-header" style="font-weight: bold; color: white;">Saldo Parcial</th>
+            <th class="table-header" style="font-weight: bold; color: white;">Ano</th>
+            <th class="table-header" style="font-weight: bold; color: white;">Mês</th>
+            <th class="table-header" style="font-weight: bold; color: white;">Ações</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var carteira in Model)
         {
             <tr>
-                <td>@carteira.IdCarteira</td>
-                <td>@carteira.IdUsuario</td>
-                <td>@carteira.SaldoInicial</td>
-                <td>@carteira.SaldoParcial</td>
-                <td>@carteira.Ano</td>
-                <td>@carteira.Mes</td>
+                <td>@carteira.idCarteira</td>
+                <td>@carteira.idUsuario</td>
+                <td>@carteira.saldoInicial</td>
+                <td>@carteira.saldoParcial</td>
+                <td>@carteira.ano</td>
+                <td>@carteira.mes</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@carteira.IdCarteira" class="btn btn-primary">Editar</a>
-                    <a asp-action="Delete" asp-route-id="@carteira.IdCarteira" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal-@carteira.IdCarteira">Excluir</a>
+                    <a asp-action="Edit" asp-route-id="@carteira.idCarteira" class="btn btn-primary">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@carteira.idCarteira" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal-@carteira.idCarteira">Excluir</a>
                 </td>
             </tr>
         }
     </tbody>
 </table>
 
-<!-- Modal de confirmação de exclusão -->
 @foreach (var carteira in Model)
 {
-    <div class="modal fade" id="deleteModal-@carteira.IdCarteira" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal fade" id="deleteModal-@carteira.idCarteira" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -52,7 +51,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <a asp-action="Delete" asp-route-id="@carteira.IdCarteira" class="btn btn-danger">Excluir</a>
+                    <a asp-action="Delete" asp-route-id="@carteira.idCarteira" class="btn btn-danger">Excluir</a>
                 </div>
             </div>
         </div>
@@ -70,3 +69,4 @@
         });
     </script>
 }
+

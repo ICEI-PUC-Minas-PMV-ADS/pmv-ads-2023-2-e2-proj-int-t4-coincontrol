@@ -1,16 +1,17 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using coincontrol.CCDbContext;
 using coincontrol.Models.Carteira;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace coincontrol.Controllers
 {
+    [Authorize]
     public class CarteiraController : Controller
     {
         private readonly CoinControlBdContext _context;
@@ -22,7 +23,7 @@ namespace coincontrol.Controllers
 
         public IActionResult Index()
         {
-            var carteiras = _context.Carteiras.ToList();
+            var carteiras = _context.Carteira.ToList();
             return View(carteiras);
         }
 
@@ -32,18 +33,28 @@ namespace coincontrol.Controllers
         }
 
         [HttpPost]
-     
-        public async Task<IActionResult> Create(Carteiras carteira)
+        public async Task<IActionResult> Create(Carteira novaCarteira)
         {
-            if (ModelState.IsValid)
+            var emailUsuario = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == emailUsuario);
+
+            if (usuario != null)
             {
-                _context.Carteiras.Add(carteira);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                novaCarteira.idUsuario = usuario.idUsuario;
+
+                if (ModelState.IsValid)
+                {
+                    _context.Carteira.Add(novaCarteira);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+            }
+            else
+            {
+                ModelState.AddModelError(string.Empty, "Usuário não encontrado.");
             }
 
-            ModelState.AddModelError(string.Empty, "Ocorreu um erro ao criar a carteira.");
-            return View(carteira);
+            return View(novaCarteira);
         }
 
         public IActionResult Edit(int? id)
@@ -53,7 +64,7 @@ namespace coincontrol.Controllers
                 return NotFound();
             }
 
-            var carteira = _context.Carteiras.Find(id);
+            var carteira = _context.Carteira.FirstOrDefault(c => c.idCarteira == id);
 
             if (carteira == null)
             {
@@ -62,35 +73,72 @@ namespace coincontrol.Controllers
 
             return View(carteira);
         }
-
         [HttpPost]
-       
-        public async Task<IActionResult> Edit(int id, Carteiras carteiras)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("idCarteira,saldoInicial, ano, mes")] Carteira carteira)
         {
-            if (id != carteiras.IdCarteira)
+            if (id != carteira.idCarteira)
             {
                 return NotFound();
             }
+
+           
+            var existingCarteira = await _context.Carteira.FindAsync(id);
+            if (existingCarteira == null)
+            {
+                return NotFound();
+            }
+
+            
+            _context.Entry(existingCarteira).State = EntityState.Detached;
+
+            var emailUsuario = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == emailUsuario);
+            if (usuario == null)
+            {
+                ModelState.AddModelError(string.Empty, "Usuário não encontrado.");
+                return View(carteira);
+            }
+
+            existingCarteira.saldoInicial = carteira.saldoInicial;
+            existingCarteira.ano = carteira.ano;
+            existingCarteira.mes = carteira.mes;
+            existingCarteira.idUsuario = usuario.idUsuario;
 
             if (ModelState.IsValid)
             {
-                _context.Update(carteiras);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index");
+                try
+                {
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!CarteiraExists(id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
             }
 
             ModelState.AddModelError(string.Empty, "Ocorreu um erro ao editar a carteira.");
-            return View(carteiras);
+            return View(carteira);
         }
 
-        public IActionResult Delete(int? id)
+
+        public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+            if (id == null || _context.Carteira == null)
             {
                 return NotFound();
             }
 
-            var carteira = _context.Carteiras.Find(id);
+            var carteira = await _context.Carteira
+                .FirstOrDefaultAsync(c => c.idCarteira == id);
 
             if (carteira == null)
             {
@@ -102,17 +150,27 @@ namespace coincontrol.Controllers
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> ConfirmarExclusao(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var carteira = _context.Carteiras.Find(id);
+            if (_context.Carteira == null)
+            {
+                return Problem("Entity set 'CoinControlBdContext.Carteira' is null.");
+            }
+
+            var carteira = await _context.Carteira.FindAsync(id);
 
             if (carteira != null)
             {
-                _context.Carteiras.Remove(carteira);
+                _context.Carteira.Remove(carteira);
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToAction("Index");
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool CarteiraExists(int id)
+        {
+            return _context.Carteira.Any(c => c.idCarteira == id);
         }
 
         public IActionResult Details(int? id)
@@ -122,14 +180,24 @@ namespace coincontrol.Controllers
                 return NotFound();
             }
 
-            var carteiras = _context.Carteiras.Find(id);
+            var carteira = _context.Carteira.FirstOrDefault(c => c.idCarteira == id);
 
-            if (carteiras == null)
+            if (carteira == null)
             {
                 return NotFound();
             }
 
-            return View(carteiras);
+            return View(carteira);
+        }
+
+        [HttpGet]
+        [Authorize(Roles = "Admin")] 
+        public IActionResult EscolherAnos(int anoEscolhido)
+        {
+            var anos = Enumerable.Range(DateTime.Now.Year - 9, 10).ToList();
+            ViewBag.Anos = new SelectList(anos, anoEscolhido);
+
+            return View();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿@using coincontrol.Models.Carteira;
-@model coincontrol.Models.Carteira.Carteiras
+@using System.Globalization
+@model coincontrol.Models.Carteira.Carteira
 
 <h1>Criar Carteira</h1>
 
@@ -10,19 +11,23 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="SaldoInicial" class="control-label"></label>
-                <input asp-for="SaldoInicial" class="form-control" />
-                <span asp-validation-for="SaldoInicial" class="text-danger"></span>
+                <label asp-for="saldoInicial" class="control-label"></label>
+                <input asp-for="saldoInicial" class="form-control" />
+                <span asp-validation-for="saldoInicial" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Ano" class="control-label"></label>
-                <input asp-for="Ano" class="form-control" />
-                <span asp-validation-for="Ano" class="text-danger"></span>
+                <label asp-for="ano" class="control-label"></label>
+                <select asp-for="ano" asp-items="@(new SelectList(Enumerable.Range(DateTime.Now.Year - 10, 11).Reverse()))" class="form-control">
+                    <option value="">Escolha o ano</option>
+                </select>
+                <span asp-validation-for="ano" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Mes" class="control-label"></label>
-                <input asp-for="Mes" class="form-control" />
-                <span asp-validation-for="Mes" class="text-danger"></span>
+                <label asp-for="mes" class="control-label"></label>
+                <select asp-for="mes" asp-items="@(new SelectList(Enumerable.Range(1, 12).Select(x => new SelectListItem { Text = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(x), Value = x.ToString() }), "Value", "Text"))" class="form-control">
+                    <option value="">Escolha o mês</option>
+                </select>
+                <span asp-validation-for="mes" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Criar Carteira" class="btn btn-success" />

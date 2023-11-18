@@ -1,20 +1,48 @@
-﻿@model coincontrol.Models.Carteira.Carteiras
+﻿@model coincontrol.Models.Carteira.Carteira
+@using System.Globalization
 
 <h1>Excluir Carteira</h1>
 <p>Tem certeza de que deseja excluir esta carteira?</p>
-<form asp-action="ConfirmarExclusao" asp-route-id="@Model.IdCarteira" method="post">
+<form asp-action="Delete" asp-route-id="@Model.idCarteira" method="post">
     <div class="form-group">
-        <label asp-for="SaldoInicial"></label>
-        <input asp-for="SaldoInicial" class="form-control" readonly />
+        <label asp-for="saldoInicial">Saldo Inicial</label>
+        <input asp-for="saldoInicial" class="form-control" readonly />
     </div>
     <div class="form-group">
-        <label asp-for="Ano"></label>
-        <input asp-for="Ano" class="form-control" readonly />
+        <label asp-for="ano">Ano</label>
+        <select asp-for="ano" class="form-control" disabled>
+            <option value="@Model.ano">@Model.ano</option>
+        </select>
     </div>
     <div class="form-group">
-        <label asp-for="Mes"></label>
-        <input asp-for="Mes" class="form-control" readonly />
+        <label asp-for="mes">Mês</label>
+        <select asp-for="mes" class="form-control" disabled>
+            <option value="@Model.mes">@CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(Model.mes)</option>
+        </select>
     </div>
     <button type="submit" class="btn btn-danger">Excluir Carteira</button>
     <a asp-action="Index" class="btn btn-info">Voltar para a lista de carteiras</a>
 </form>
+
+<h3>Detalhes da Carteira</h3>
+<hr />
+<dl class="row">
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.saldoInicial)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.saldoInicial)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.ano)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.ano)
+    </dd>
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.mes)
+    </dt>
+    <dd class="col-sm-10">
+        @Model.mes
+    </dd>
+</dl>

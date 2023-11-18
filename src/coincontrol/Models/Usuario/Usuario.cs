@@ -10,7 +10,7 @@ namespace coincontrol.Models.Usuario
     {
         [Key]
         [Column("idUsuario")]
-        public int IdUsuario { get; set; }
+        public int idUsuario { get; set; }
 
         [Column("nome")]
         [Required(ErrorMessage = "Obrigatório informar o nome!")]

@@ -118,7 +118,7 @@ namespace coincontrol.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(int id, [Bind("Nome,Email,Senha")] Usuario dados)
         {
-            if (id != dados.IdUsuario)
+            if (id != dados.idUsuario)
                 return NotFound();
 
             if (ModelState.IsValid)
