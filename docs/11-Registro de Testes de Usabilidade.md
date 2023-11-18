@@ -144,7 +144,7 @@
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adulto  | Não houve sucesso, pois o usuário não conseguiu cadastrar nova meta para uma categoria que ele tinha criado. | O sistema só estava permitindo a criação de novas metas para a categoria Viagem e não para as demais categorias. | Não se aplica. | Usuário sugere que na tela de cadastro de nova meta o campo categoria esteja acima do campo de valor da meta (invertido ao que está atualmente). |
+| Adulto  | Não houve sucesso, pois o usuário não conseguiu cadastrar nova meta para uma categoria que ele tinha criado. | O usuário não compreendeu que a criação da meta deve ser feita no cadastro de nova categoria. | Não se aplica. | Usuário sugere que na tela de cadastro de nova meta o campo categoria esteja acima do campo de valor da meta (invertido ao que está atualmente). E que o passo-a-passo para criação de nova meta esteja descrito em algum local da aplicação. |
 | Idoso |   |   |   |   |
 | Adolescente |   |   |   |   |
 
