@@ -120,9 +120,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RF_007	- O aplicativo deve permitir que os usuários estabeleçam um orçamento mensal para diferentes categorias de despesas. |
 | Objetivo do Teste 	| Checar se a aplicação permite ao usuário estabelecer um orçamento mensal para diferentes categorias de despesas. |
 |Resultado esperado | A aplicação permite o estabelecimento de orçamento mensal para categorias de despesas. |
-|Resultado obtido ||
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido |Utilizando a funcionalidade de metas, o usuário pode buscar definir orçamentos mensais para categorias.|
+|Avaliação | Nível 0 |
+|Evidência | <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/57138380-ec7d-4cf0-be34-b05071c4a02f" width="300"/> |
 
 | **Caso de Teste** 	| **CT-11 – Conversão de moeda**	|
 |---|---|
