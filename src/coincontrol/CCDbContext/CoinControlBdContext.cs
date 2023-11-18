@@ -12,7 +12,7 @@ namespace coincontrol.CCDbContext
 
         public DbSet<Usuario> Usuarios { get; set; }
 
-        public DbSet<coincontrol.Models.Carteira.Carteiras> Carteiras { get; set; }
+        public DbSet<coincontrol.Models.Carteira.Carteira> Carteira { get; set; }
 
         public DbSet<Meta> Metas { get; set; }
 
