@@ -18,11 +18,16 @@
 
 **REGISTROS DE TESTES DE USABILIDADE:**
 
-
 | **1- VISIBILIDADE DO STATUS DO SISTEMA** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
 | As telas possuem títulos que descrevem seu conteúdo? |  0 | Existem cabeçalhos com os nomes.  |
 | Os ícones selecionados se destacam dos não selecionados? | 1  |  Funcionalidade ainda não implementada. |
+| O sistema apresenta em que tela o usuário se encontra e possibilidades de ação? |  0 |  Há títulos que indicam em qual localidade da aplicação o usuário se encontra. |
+
+| **1 (V2)- VISIBILIDADE DO STATUS DO SISTEMA** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
+|---|---|---|
+| As telas possuem títulos que descrevem seu conteúdo? |  0 | Existem cabeçalhos com os nomes.  |
+| Os ícones selecionados se destacam dos não selecionados? | 0  |  Após ajustes, a funcionalidade foi implementada e os botões a serem selecionados se destacam com um retângulo cinza no seu entorno.. |
 | O sistema apresenta em que tela o usuário se encontra e possibilidades de ação? |  0 |  Há títulos que indicam em qual localidade da aplicação o usuário se encontra. |
 
 | **2- CORRESPONDÊNCIA ENTRE SISTEMA E MUNDO REAL** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
@@ -35,6 +40,12 @@
 |---|---|---|
 | As opções de ações do usuário são facilmente visualizadas? |  0 |  Botões com bom tamanho de visualização. | 
 | Existem funcionalidades para o usuário desfazer ações? | 2  |  Pode-se buscar a inclusão de funcionalidade "voltar" nas páginas até então criadas. Também pode-se inserir o botão de editar o cadastro de login, caso ele queira alterar e-mail ou senha. | 
+| O usuário pode editar, copiar e colar durante a entrada de dados? | 0  | Ele tem essa liberdade.  |
+
+| **3 (V2)- CONTROLE DO USUÁRIO E LIBERDADE** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
+|---|---|---|
+| As opções de ações do usuário são facilmente visualizadas? |  0 |  Botões com bom tamanho de visualização. | 
+| Existem funcionalidades para o usuário desfazer ações? | 1  |  Após novas edições, foram inseridos botões de "voltar" nas páginas, bem como o ícone que indica a possibilidade de clicar e retornar para a página inicial. Mas não foi possível ainda inserir o botão de editar o cadastro de login, caso ele queira alterar e-mail ou senha. | 
 | O usuário pode editar, copiar e colar durante a entrada de dados? | 0  | Ele tem essa liberdade.  |
 
 | **4- CONSISTÊNCIA E PADRÕES** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
@@ -51,6 +62,13 @@
 | O sistema alerta o usuário quando ele vai realizar alguma ação crítica e/ou irreversível? | 3  |  Será implementado. |
 | Quando existem padrões de formatação para as entradas, isso é sinalizado ao usuário? |  2 |  É informado em mensagem de erro na maioria dos casos. Mas é necessário ainda cadastrar o requisito de formatação da senha, bem como seu aviso de erro em caso de não atendimento à regra. |
 
+| **5 (V2) - PREVENÇÃO DE ERROS** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
+|---|---|---|
+| O usuário é solicitado a confirmar tarefas que possuem consequências drásticas? | 0  | Nas ações de exclusão surgem caixas de diálogo perguntando se o usuário tem certeza que quer excluir aquele item.  | 
+| As opções dos menus são lógicas e distintas entre si?  | 0  |  Claras e objetivas. |  
+| O sistema alerta o usuário quando ele vai realizar alguma ação crítica e/ou irreversível? | 0  |  Através das caixas de diálogo que se abrem para confirmação de exclusão. |
+| Quando existem padrões de formatação para as entradas, isso é sinalizado ao usuário? |  0 |  São abertas mensagens de erro nos campos de entradas. Após programação de novas funcionalidades, o requisito de formatação da senha foi inserido e a respectiva caixa de diálogo se abre em caso de não atendimento aos requisitos de senha. |
+
 | **6- RECONHECIMENTO EM VEZ DE MEMORIZAÇÃO** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
 | São observados rótulos dos ambientes onde o usuário se encontra? |  0 |  Os nomes são claros. | 
@@ -58,10 +76,17 @@
 | A aplicação é nítida na diferenciação do estado logado do não logado?  | 0  |  Quando logado, o nome do usuário é destacado. | 
 | Existem diferenças, mesmo que sutis, entre as telas onde o usuário pode navegar, de forma a diferenciá-las e identificá-las visualmente?  | 1  | Melhorias estéticas podem ser implementadas. |
 
+| **6 (V2)- RECONHECIMENTO EM VEZ DE MEMORIZAÇÃO** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
+|---|---|---|
+| São observados rótulos dos ambientes onde o usuário se encontra? |  0 |  Os nomes são claros. | 
+| Existem botões que levem às ações de visualização de histórico de movimentações? | 0  |  As páginas de categorias, transações, metas e carteira, onde não feitas entradas, possuem páginas que mostram histórico de lançamentos. |  
+| A aplicação é nítida na diferenciação do estado logado do não logado?  | 0  |  Quando logado, o nome do usuário é destacado. | 
+| Existem diferenças, mesmo que sutis, entre as telas onde o usuário pode navegar, de forma a diferenciá-las e identificá-las visualmente?  | 0  | Após realização de melhorias, as telas são facilmente diferenciadas pelo usuário. |
+
 | **7- FLEXIBILIDADE E EFICIÊNCIA DE USO** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
 | Exitem atalhos para as ações do usuário? | 0  | A aplicação possui botões que já levam o usuário, com um clique, à função desejada.  | 
-| O usuário pode realizar as tarefas de diferentes maneiras, incluindo algumas mais simples? | 1  | Ainda não implementado. Baixa prioridade.  |  
+| O usuário pode realizar as tarefas de diferentes maneiras, incluindo algumas mais simples? | 1  | Ainda não implementado. A funcionalidade é classificada como de baixa prioridade pela equipe.  |  
 
 | **8- ESTÉTICA E DESIGN MINIMALISTA** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
 |---|---|---|
@@ -80,7 +105,13 @@
 |---|---|---|
 | A aplicação possui alguma forma de ajuda ao usuário? |  4 |  Problema que será resolvido com prioridade. | 
 | Os campos de ajuda e documentação são facilmente encontrados pelo usuário? |  4 |  Problema que será resolvido com prioridade. |  
-| A aplicação possui documentação/informação básica disponível para o usuário (funcionamento, utilidade, limitações, políticas de privacidade, entre outros)? | 1  | Pode ser implementado em etapas subsequentes.  | 
+| A aplicação possui documentação/informação básica disponível para o usuário (funcionamento, utilidade, limitações, políticas de privacidade, entre outros)? | 1  | Pode ser implementado em etapas subsequentes.  |
+
+| **10 (V2)- AJUDA E DOCUMENTAÇÃO** | **AVALIAÇÃO (ESCALA)** | **COMENTÁRIOS** | 
+|---|---|---|
+| A aplicação possui alguma forma de ajuda ao usuário? |  3 |  Ainda não foi implementado, mas é importante. | 
+| Os campos de ajuda e documentação são facilmente encontrados pelo usuário? |  3 |  Ainda não foi implementado, mas é importante. |  
+| A aplicação possui documentação/informação básica disponível para o usuário (funcionamento, utilidade, limitações, políticas de privacidade, entre outros)? | 3  | Ainda não foi implementado, mas é considerado importante pela equipe.  | 
 
 ## Testes de Usabilidade do tipo Dinâmica
 <p>Os Testes de Usabilidade, do tipo dinâmica, foram feitos com o auxílio de três usuários, uma adolescente, um adulto e um idoso. Os resultados dos testes estão apresentados nos quadros apresentados a seguir:
