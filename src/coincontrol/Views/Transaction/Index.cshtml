@@ -8,7 +8,7 @@
 
 <div class="row">
     <div class="col-md-7">
-        <ejs-grid id="transactions" dataSource="@Model" gridLines="None"
+        <ejs-grid id="transactions" dataSource="@Model" gridLines="None" hierarchyPrintMode="All" toolbar="@(new List<string>() {"Print" })"
                   allowSorting="true" allowPaging="true">
             <e-grid-pagesettings pageSize="10"></e-grid-pagesettings>
             <e-grid-columns>
@@ -20,6 +20,17 @@
             </e-grid-columns>
         </ejs-grid>
     </div>
+
+    <style>
+   
+        .e-grid .e-toolbar 
+        {
+            background-color: transparent !important;
+            border: none;
+        }
+
+    </style>
+
     <div class="col-md-5">
         <div class="widget h-100 d-flex justify-content-center align-items-center">
             <i class="fa-solid fa-money-bill-transfer fa-2xl"></i>
