@@ -102,9 +102,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RF_005	- O aplicativo web deve ter capacidade de exportar dados financeiros em formatos de planilhas ou PDF's, para uso externo. |
 | Objetivo do Teste 	| Verificar se a aplicação exporta os dados em planilha ou arquivo PDF. |
 |Resultado esperado | A aplicação exporta dados em arquivos. |
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | É possível realizar a exportação dos dados em PDF. |
+|Avaliação | Nível 0 |
+|Evidência | <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/59593ddf-7c1a-4b86-af41-7c0cda4bf517" width="300"/> <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/ac42ceb3-2463-4f7b-a1ee-2156bb51321c" width="300"/> |
 
 | **Caso de Teste** 	| **CT-09 – Relatar problemas ou sugestões**	|
 |---|---|
