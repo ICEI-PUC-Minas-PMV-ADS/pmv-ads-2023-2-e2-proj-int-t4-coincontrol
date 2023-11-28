@@ -18,7 +18,7 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
 });
 
 //Register Syncfusion license
-Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NHaF5cXmVCf1JpRGtGfV5yd0VAal9STnNZUj0eQnxTdEZiWH5fcXxWRWVaUEVxVw==");
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NHaF1cWWhIfEx0TXxbf1xzZFFMY19bQHdPIiBoS35RdURiW3dfdndWQmJbU0F3");
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
