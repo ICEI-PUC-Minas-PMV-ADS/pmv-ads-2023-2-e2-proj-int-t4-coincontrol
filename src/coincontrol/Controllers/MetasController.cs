@@ -68,9 +68,9 @@ namespace coincontrol.Controllers
                 .Where(m => m.Usuario == usuario)
                 .ToListAsync();
 
-            if (metasUsuario.Count > MAX_METAS)
+            if (metasUsuario.Count >= MAX_METAS)
             {
-                ModelState.AddModelError(string.Empty, "Número máximo de metas atingidas!");
+                TempData["Alerta"] = "Número máximo de metas atingidas!";
                 return View(meta);
             }
 

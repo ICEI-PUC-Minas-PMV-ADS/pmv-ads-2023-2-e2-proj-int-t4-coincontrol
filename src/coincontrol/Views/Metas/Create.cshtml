@@ -5,6 +5,7 @@
 }
 
 <div class="row">
+    <div id="toast-container"></div>
     <div class="col-md-7">
         <div class ="widget p-5" style="background-color:#212b36">
             <form asp-action="Create">
@@ -29,4 +30,19 @@
         </div>
     </div>
 
+    @section Scripts {
+        <script>
+                var alerta = '@TempData["Alerta"]';
+                if (alerta) {
+                    var toast = new ejs.notifications.Toast({
+                        title: 'Alerta!',
+                        content: alerta,
+                        cssClass: 'e-toast-danger',
+                        position: { X: 'Center', Y: 'Top' },
+                    });
+                    toast.appendTo('#toast-container');
+                    toast.show();
+                }
+        </script>
+    }
 </div>
