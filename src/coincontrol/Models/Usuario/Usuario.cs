@@ -30,5 +30,6 @@ namespace coincontrol.Models.Usuario
             ErrorMessage = "A senha deve ter no mínimo oito caracteres, incluindo pelo menos uma letra maiúscula, um número e um símbolo.")]
         [MaxLength(100)]
         public string Senha { get; set; }
+        public ICollection<Meta.Meta> Metas { get; set; } 
     }
 }

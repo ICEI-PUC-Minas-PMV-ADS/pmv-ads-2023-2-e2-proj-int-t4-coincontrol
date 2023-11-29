@@ -14,6 +14,7 @@ namespace coincontrol.Controllers
 {
     public class MetasController : Controller
     {
+        private readonly int MAX_METAS = 3; 
         private readonly CoinControlBdContext _context;
 
         public MetasController(CoinControlBdContext context)
@@ -25,7 +26,7 @@ namespace coincontrol.Controllers
         public async Task<IActionResult> Index()
         {
             var meta = _context.Metas.Include(m => m.Categoria);
-              return View(await meta.ToListAsync());
+            return View(await meta.ToListAsync());
         }
 
         // GET: Metas/Details/5
@@ -63,6 +64,16 @@ namespace coincontrol.Controllers
             var emailUsuario = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Email == emailUsuario);
 
+            var metasUsuario = await _context.Metas
+                .Where(m => m.Usuario == usuario)
+                .ToListAsync();
+
+            if (metasUsuario.Count > MAX_METAS)
+            {
+                ModelState.AddModelError(string.Empty, "Número máximo de metas atingidas!");
+                return View(meta);
+            }
+
             if (ModelState.IsValid)
             {
                 int idCategoria;
@@ -73,6 +84,7 @@ namespace coincontrol.Controllers
                 }
 
                 meta.Usuario = usuario;
+                metasUsuario.Add(meta);
                 _context.Add(meta);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
