@@ -29,6 +29,7 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 Lista de tecnologias do projeto.
 
 - Editor de código: Visual Studio.
+- Framework de frontend: Bootstrap e Syncfusion.
 - Ferramentas de comunicação: Microsoft Teams e Whatsapp.
 - Ferramentas de desenho de tela (_wireframing_): Figma.
 - Plataforma de elaboração visual (_userflow_): Canva.

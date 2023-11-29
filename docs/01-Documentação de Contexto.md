@@ -18,10 +18,10 @@ O problema evidenciado reside na desafiadora tarefa que diversas pessoas encontr
 O objetivo geral deste projeto é criar uma aplicação que permita aos usuários gerenciar seus gastos, de forma simples, objetiva e prática. 
 
 Como objetivos específicos temos:
-  - Permitir o lançamento de despesas fixas em diferentes formas de pagamento;
-  - Permitir o lançamento de despesas variáveis em diferentes formas de pagamento; 
-  - Possibilitar ao usuário que esse defina limite de gastos para categorias diversas;
-  - Possibilitar ao usuário que esse defina valores para alcançar metas.
+  - Permitir o lançamento de ganhos em diferentes categorias;
+  - Permitir o lançamento de despesas variáveis em diferentes formas de categoria; 
+  - Possibilitar ao usuário que esse defina valores para alcançar metas;
+  - Apresentar de forma clara e rápida o resumo da situação financeira do usuário.
 
 
 ## Justificativa
