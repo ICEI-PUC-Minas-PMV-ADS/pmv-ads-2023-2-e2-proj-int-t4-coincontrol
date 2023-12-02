@@ -1,0 +1,23 @@
+﻿@model List<Question>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q&A Page</title>
+</head>
+<body>
+    <h1>Perguntas e respostas:</h1>
+
+    @foreach (var qa in Model)
+    {
+        <div class="qa-item">
+            <div class="question">
+                <h3>@qa.QuestionText</h3>
+            </div>
+            <div class="answer">
+                <p>@qa.AnswerText</p>
+            </div>
+        </div>
+    }
+</body>
+</html>
