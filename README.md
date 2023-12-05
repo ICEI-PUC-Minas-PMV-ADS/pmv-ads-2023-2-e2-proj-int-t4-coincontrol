@@ -50,7 +50,7 @@ Senha: Abcd123!
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<li><a href="src/coincontrol"> Código Fonte</a></li>
 
 # Apresentação
 
