@@ -229,9 +229,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Regra associada | Regra 04	- A aplicação permitirá o cadastro de até três metas por usuário. |
 | Objetivo do Teste 	| Verificar se o site limita a quantidade de metas em até três por usuário. |
 |Resultado esperado | O site limita a quantidade de metas em até três por usuário. | 
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | Ao tentar cadastrar nova meta, é exibido mensagem de aviso. |
+|Avaliação | Nível 0 |
+|Evidência | <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/ad9b574d-c81f-4f34-bd4b-7004f7bbdd44" width="300"/> |
 
 
 
