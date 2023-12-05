@@ -147,9 +147,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RF_011	- A aplicação deve oferecer, no primeiro acesso do usuário, um tutorial explicativo de seu uso. |
 | Objetivo do Teste 	| Checar se a aplicação oferece, no primeiro acesso, um tutorial explicativo sobre seu uso. |
 |Resultado esperado | A aplicação oferece o tutorial explicativo no primeiro acesso do usuário. |
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | A aplicação fornece, em todos os momentos, uma sessão de Q/A para que o usuário maneje o aplicativo. |
+|Avaliação | Nível zero |
+|Evidência | <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/70d652cc-17fb-4bc3-b043-48956c558a75" width="300"/> |
 
 | **Caso de Teste** 	| **CT-14 – Responsividade**	|
 |---|---|
