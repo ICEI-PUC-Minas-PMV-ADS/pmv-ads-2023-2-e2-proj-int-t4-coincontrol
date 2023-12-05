@@ -168,8 +168,8 @@
 
 | **USUÁRIO** | **TAXA DE SUCESSO** | **ERROS OCORRIDOS** | **TEMPO GASTO** | **TAXA DE SATISFAÇÃO E COMENTÁRIOS/SUGESTÕES** | 
 |---|---|---|---|---|
-| Adulto  |   |   |   |   |
-| Idoso |   |   |   |   |
-| Adolescente |   |   |   |   |
+| Adulto  | Visualização realizada com sucesso.  | Nenhum.  | 14s  | Usuário satisfeito.   |
+| Idoso | Visualização realizada com sucesso.  | Nenhum.  |  35s | Usuário satisfeito.   |
+| Adolescente | Visualização realizada com sucesso.  | Nenhum.  | 8s  |  Usuário satisfeito porém recomendou que fosse possível que os dados fossem exportados para seu e-mail cadastrado. |
 
 Os testes realizados mostram que o sistema já permite seu funcionamento, porém ainda apresenta alguns ajustes a serem realizados pela equipe de desenvolvimento. As telas estão bem configuradas para a navegação do usuário com certa facilidade, porém melhorias ainda podem ser implementadas no sentido de aumentar a satisfação na experiência do usuário, item considerado muito importante pela equipe de desenvolvimento.
