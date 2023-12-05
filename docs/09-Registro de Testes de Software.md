@@ -111,9 +111,9 @@ De acordo com os requisitos estabelecidos pela equipe para o desenvolvimento da 
 |Requisito Associado | RF_006	- O aplicativo deve oferecer suporte ao cliente para auxiliar os usuários em caso de problemas técnicos ou dúvidas sobre o uso deste. |
 | Objetivo do Teste 	| Verificar se o sistema permite que o usuário obtenha suporte em caso de problemas técnicos ou dúvidas. |
 |Resultado esperado | A aplicação fornece local de suporte em caso de problemas técnicos ou dúvidas. |
-|Resultado obtido | ********* |
-|Avaliação | ********* |
-|Evidência | ********* |
+|Resultado obtido | Na sessão de Q/A da aplicação é fornecido um endereço de e-mail para que os usuários entrem em contato. |
+|Avaliação | Nível 0 |
+|Evidência | <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t4-coincontrol/assets/100796561/8bd3463b-2061-4e59-b85c-53cf7265cd22" width="300"/> |
 
 | **Caso de Teste** 	| **CT-10 – Orçamento por categorias de despesas**	|
 |---|---|
